@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using System;
 
 namespace Maths
 {
@@ -12,7 +13,39 @@ namespace Maths
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            // SetContentView (Resource.Layout.Main);
+             SetContentView (Resource.Layout.Main);
+
+            #region LearnMenuStart
+            Button mbuttonlearn = FindViewById<Button>(Resource.Id.buttonlearn);
+            mbuttonlearn.Click += delegate
+             {
+                 //
+             };
+            #endregion
+
+            #region Stats
+            Button mbuttonstatistics = FindViewById<Button>(Resource.Id.buttonstatistics);
+            mbuttonstatistics.Click += delegate
+            {
+                //
+            };
+            #endregion
+
+            #region Info
+            Button mbuttoninfo = FindViewById<Button>(Resource.Id.buttoninfo);
+            mbuttoninfo.Click += delegate
+            {
+                //
+            };
+            #endregion
+
+            #region Exit an app
+            Button mbuttonexit = FindViewById<Button>(Resource.Id.buttonexit);
+            mbuttonexit.Click += delegate
+            {
+                System.Environment.Exit(0);
+            };
+            #endregion
         }
     }
 }

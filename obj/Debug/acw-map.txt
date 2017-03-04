@@ -1,0 +1,4 @@
+Maths.MainActivity, Maths;md502ec723c28804832e41ec886bb23ac8d.MainActivity
+Maths.MainActivity, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md502ec723c28804832e41ec886bb23ac8d.MainActivity
+Maths.MainActivity;md502ec723c28804832e41ec886bb23ac8d.MainActivity
+maths.MainActivity;md502ec723c28804832e41ec886bb23ac8d.MainActivity
