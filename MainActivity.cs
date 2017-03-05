@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 using System;
+using Maths.Resources.Source;
 
 namespace Maths
 {
@@ -35,7 +36,7 @@ namespace Maths
             Button mbuttoninfo = FindViewById<Button>(Resource.Id.buttoninfo);
             mbuttoninfo.Click += delegate
             {
-                //
+                StartActivity(typeof(Aboutinfo)); //errors
             };
             #endregion
 
