@@ -12,23 +12,16 @@ using Android.Widget;
 
 namespace Maths.Resources.Source
 {
-    [Activity(Label = "AboutInfo")]
-    public class Aboutinfo : Activity
+    [Activity(Label = "Learn")]
+    public class Learn : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.Aboutinfo);
+            SetContentView(Resource.Layout.Learn);
 
-            #region Exit
-            Button buttonexit = FindViewById<Button>(Resource.Id.buttonexit);
-            buttonexit.Click += delegate
-            {
-                Finish(); //Close Activity
-            };
-            #endregion
 
 
         }

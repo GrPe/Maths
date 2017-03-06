@@ -6,3 +6,7 @@ Maths.Resources.Source.Aboutinfo, Maths;md593e2e1c2f3bdedaaef639468a62eb3eb.Abou
 Maths.Resources.Source.Aboutinfo, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo
 Maths.Resources.Source.Aboutinfo;md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo
 maths.resources.source.Aboutinfo;md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo
+Maths.Resources.Source.Learn, Maths;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
+Maths.Resources.Source.Learn, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
+Maths.Resources.Source.Learn;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
+maths.resources.source.Learn;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn

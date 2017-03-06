@@ -1,7 +1,7 @@
 package md593e2e1c2f3bdedaaef639468a62eb3eb;
 
 
-public class Aboutinfo
+public class Learn
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -12,15 +12,15 @@ public class Aboutinfo
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("Maths.Resources.Source.Aboutinfo, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", Aboutinfo.class, __md_methods);
+		mono.android.Runtime.register ("Maths.Resources.Source.Learn, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", Learn.class, __md_methods);
 	}
 
 
-	public Aboutinfo () throws java.lang.Throwable
+	public Learn () throws java.lang.Throwable
 	{
 		super ();
-		if (getClass () == Aboutinfo.class)
-			mono.android.TypeManager.Activate ("Maths.Resources.Source.Aboutinfo, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == Learn.class)
+			mono.android.TypeManager.Activate ("Maths.Resources.Source.Learn, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

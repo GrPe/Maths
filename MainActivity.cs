@@ -20,7 +20,7 @@ namespace Maths
             Button mbuttonlearn = FindViewById<Button>(Resource.Id.buttonlearn);
             mbuttonlearn.Click += delegate
              {
-                 //
+                 StartActivity(typeof(Learn));
              };
             #endregion
 
@@ -36,7 +36,7 @@ namespace Maths
             Button mbuttoninfo = FindViewById<Button>(Resource.Id.buttoninfo);
             mbuttoninfo.Click += delegate
             {
-                StartActivity(typeof(Aboutinfo)); //errors
+                StartActivity(typeof(Aboutinfo));
             };
             #endregion
 
