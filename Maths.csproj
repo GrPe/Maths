@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Source\AboutInfo.cs" />
     <Compile Include="Resources\Source\Learn.cs" />
+    <Compile Include="Resources\Source\Stats.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -64,6 +65,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Learn.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Stats.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

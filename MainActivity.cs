@@ -28,7 +28,7 @@ namespace Maths
             Button mbuttonstatistics = FindViewById<Button>(Resource.Id.buttonstatistics);
             mbuttonstatistics.Click += delegate
             {
-                //
+                StartActivity(typeof(Stats));
             };
             #endregion
 

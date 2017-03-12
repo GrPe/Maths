@@ -24,6 +24,7 @@ public final class R {
         public static final int aboutinfo=0x7f030000;
         public static final int learn=0x7f030001;
         public static final int main=0x7f030002;
+        public static final int stats=0x7f030003;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;
