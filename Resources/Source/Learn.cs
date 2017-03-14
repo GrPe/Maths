@@ -15,15 +15,18 @@ namespace Maths.Resources.Source
     [Activity(Label = "Learn")]
     public class Learn : Activity
     {
+        private List<Activity> Activities = new List<Activity>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
             SetContentView(Resource.Layout.Learn);
+        }
 
-
-
+        private void Set()
+        {
+            //Activities.Add()
         }
     }
 }

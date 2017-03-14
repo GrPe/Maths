@@ -21,6 +21,7 @@ namespace Maths.Resources.Source
 
             // Create your application here
             SetContentView(Resource.Layout.Aboutinfo);
+            
 
         }
     }
