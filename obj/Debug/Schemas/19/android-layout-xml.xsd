@@ -3,7 +3,7 @@
   <xs:import schemaLocation="schemas.android.com.apk.res.android.xsd" namespace="http://schemas.android.com/apk/res/android" />
   <xs:annotation>
     <xs:documentation>v19</xs:documentation>
-    <xs:documentation>2017-03-14 23:37:56</xs:documentation>
+    <xs:documentation>2017-03-15 00:06:45</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -176,8 +176,20 @@
     <xs:attribute ref="android:importantForAccessibility" />
     <xs:attribute ref="android:accessibilityLiveRegion" />
     <xs:attribute ref="android:labelFor" />
+    <xs:attribute ref="android:layout_row" />
+    <xs:attribute ref="android:layout_rowSpan" />
+    <xs:attribute ref="android:layout_column" />
+    <xs:attribute ref="android:layout_columnSpan" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_margin" />
+    <xs:attribute ref="android:layout_marginLeft" />
+    <xs:attribute ref="android:layout_marginTop" />
+    <xs:attribute ref="android:layout_marginRight" />
+    <xs:attribute ref="android:layout_marginBottom" />
+    <xs:attribute ref="android:layout_marginStart" />
+    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
   <xs:element name="SurfaceView" type="SurfaceView">
@@ -1204,8 +1216,20 @@
     <xs:attribute ref="android:name" />
     <xs:attribute ref="android:id" />
     <xs:attribute ref="android:tag" />
+    <xs:attribute ref="android:layout_row" />
+    <xs:attribute ref="android:layout_rowSpan" />
+    <xs:attribute ref="android:layout_column" />
+    <xs:attribute ref="android:layout_columnSpan" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_margin" />
+    <xs:attribute ref="android:layout_marginLeft" />
+    <xs:attribute ref="android:layout_marginTop" />
+    <xs:attribute ref="android:layout_marginRight" />
+    <xs:attribute ref="android:layout_marginBottom" />
+    <xs:attribute ref="android:layout_marginStart" />
+    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
 </xs:schema>

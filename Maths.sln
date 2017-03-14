@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maths", "Maths.csproj", "{90C68F85-543F-477D-9C4B-546EFDF86950}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "..\Engine\Engine.csproj", "{0BE120FF-CDCF-4581-87E8-3E972D9C7AEF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,10 +17,6 @@ Global
 		{90C68F85-543F-477D-9C4B-546EFDF86950}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90C68F85-543F-477D-9C4B-546EFDF86950}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90C68F85-543F-477D-9C4B-546EFDF86950}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{0BE120FF-CDCF-4581-87E8-3E972D9C7AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0BE120FF-CDCF-4581-87E8-3E972D9C7AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0BE120FF-CDCF-4581-87E8-3E972D9C7AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0BE120FF-CDCF-4581-87E8-3E972D9C7AEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
