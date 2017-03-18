@@ -18,6 +18,7 @@ namespace Maths.Resources.Functionalities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.Addition2);
 
             // Create your application here
         }

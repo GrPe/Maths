@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="schemas.android.com.apk.res.android.xsd" namespace="http://schemas.android.com/apk/res/android" />
+  <xs:import schemaLocation="schemas.android.com.apk.res.auto.xsd" namespace="http://schemas.android.com/apk/res-auto" />
+  <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v19</xs:documentation>
-    <xs:documentation>2017-03-16 21:12:28</xs:documentation>
+    <xs:documentation>2017-03-18 23:25:51</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -176,31 +178,11 @@
     <xs:attribute ref="android:importantForAccessibility" />
     <xs:attribute ref="android:accessibilityLiveRegion" />
     <xs:attribute ref="android:labelFor" />
-    <xs:attribute ref="android:layout_toLeftOf" />
-    <xs:attribute ref="android:layout_toRightOf" />
-    <xs:attribute ref="android:layout_above" />
-    <xs:attribute ref="android:layout_below" />
-    <xs:attribute ref="android:layout_alignBaseline" />
-    <xs:attribute ref="android:layout_alignLeft" />
-    <xs:attribute ref="android:layout_alignTop" />
-    <xs:attribute ref="android:layout_alignRight" />
-    <xs:attribute ref="android:layout_alignBottom" />
-    <xs:attribute ref="android:layout_alignParentLeft" />
-    <xs:attribute ref="android:layout_alignParentTop" />
-    <xs:attribute ref="android:layout_alignParentRight" />
-    <xs:attribute ref="android:layout_alignParentBottom" />
-    <xs:attribute ref="android:layout_centerInParent" />
-    <xs:attribute ref="android:layout_centerHorizontal" />
-    <xs:attribute ref="android:layout_centerVertical" />
-    <xs:attribute ref="android:layout_alignWithParentIfMissing" />
-    <xs:attribute ref="android:layout_toStartOf" />
-    <xs:attribute ref="android:layout_toEndOf" />
-    <xs:attribute ref="android:layout_alignStart" />
-    <xs:attribute ref="android:layout_alignEnd" />
-    <xs:attribute ref="android:layout_alignParentStart" />
-    <xs:attribute ref="android:layout_alignParentEnd" />
+    <xs:attribute ref="tools:visibility" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />
@@ -357,6 +339,7 @@
         <xs:attribute ref="android:textCursorDrawable" />
         <xs:attribute ref="android:textIsSelectable" />
         <xs:attribute ref="android:textAllCaps" />
+        <xs:attribute ref="tools:text" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -597,6 +580,9 @@
     <xs:complexContent mixed="false">
       <xs:extension base="AdapterView">
         <xs:attribute ref="android:entries" />
+        <xs:attribute ref="tools:listitem" />
+        <xs:attribute ref="tools:listheader" />
+        <xs:attribute ref="tools:listfooter" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -1015,6 +1001,9 @@
         <xs:attribute ref="android:outAnimation" />
         <xs:attribute ref="android:loopViews" />
         <xs:attribute ref="android:animateFirstView" />
+        <xs:attribute ref="tools:listitem" />
+        <xs:attribute ref="tools:listheader" />
+        <xs:attribute ref="tools:listfooter" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -1067,6 +1056,9 @@
         <xs:attribute ref="android:smoothScrollbar" />
         <xs:attribute ref="android:choiceMode" />
         <xs:attribute ref="android:fastScrollAlwaysVisible" />
+        <xs:attribute ref="tools:listitem" />
+        <xs:attribute ref="tools:listheader" />
+        <xs:attribute ref="tools:listfooter" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -1234,31 +1226,11 @@
     <xs:attribute ref="android:name" />
     <xs:attribute ref="android:id" />
     <xs:attribute ref="android:tag" />
-    <xs:attribute ref="android:layout_toLeftOf" />
-    <xs:attribute ref="android:layout_toRightOf" />
-    <xs:attribute ref="android:layout_above" />
-    <xs:attribute ref="android:layout_below" />
-    <xs:attribute ref="android:layout_alignBaseline" />
-    <xs:attribute ref="android:layout_alignLeft" />
-    <xs:attribute ref="android:layout_alignTop" />
-    <xs:attribute ref="android:layout_alignRight" />
-    <xs:attribute ref="android:layout_alignBottom" />
-    <xs:attribute ref="android:layout_alignParentLeft" />
-    <xs:attribute ref="android:layout_alignParentTop" />
-    <xs:attribute ref="android:layout_alignParentRight" />
-    <xs:attribute ref="android:layout_alignParentBottom" />
-    <xs:attribute ref="android:layout_centerInParent" />
-    <xs:attribute ref="android:layout_centerHorizontal" />
-    <xs:attribute ref="android:layout_centerVertical" />
-    <xs:attribute ref="android:layout_alignWithParentIfMissing" />
-    <xs:attribute ref="android:layout_toStartOf" />
-    <xs:attribute ref="android:layout_toEndOf" />
-    <xs:attribute ref="android:layout_alignStart" />
-    <xs:attribute ref="android:layout_alignEnd" />
-    <xs:attribute ref="android:layout_alignParentStart" />
-    <xs:attribute ref="android:layout_alignParentEnd" />
+    <xs:attribute ref="tools:layout" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />

@@ -10,3 +10,11 @@ Maths.Resources.Source.Learn, Maths;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
 Maths.Resources.Source.Learn, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
 Maths.Resources.Source.Learn;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
 maths.resources.source.Learn;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
+Maths.Resources.Source.Stats, Maths;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
+Maths.Resources.Source.Stats, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
+Maths.Resources.Source.Stats;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
+maths.resources.source.Stats;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
+Maths.Resources.Functionalities.Addition2, Maths;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
+Maths.Resources.Functionalities.Addition2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
+Maths.Resources.Functionalities.Addition2;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
+maths.resources.functionalities.Addition2;md5e19f32ad73151eb73bc6ab1b38770845.Addition2

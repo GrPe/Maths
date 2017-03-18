@@ -3,5 +3,6 @@
   <PropertyGroup>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
     <SelectedDevice>Nexus 4 %28KitKat%29</SelectedDevice>
+    <DefaultDevice>Nexus 4 %28KitKat%29</DefaultDevice>
   </PropertyGroup>
 </Project>
