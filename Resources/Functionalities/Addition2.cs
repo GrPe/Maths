@@ -32,11 +32,36 @@ namespace Maths.Resources.Functionalities
 
             TextView mTextView = FindViewById<TextView>(Resource.Id.textView1); //Rename!!!
             EditText mEditText = FindViewById<EditText>(Resource.Id.editText); //Rename !!!
-            
-                exp expression = GenerateExpression();
-                mTextView.Text = expression.retvalue;
+            Button mbutton = FindViewById<Button>(Resource.Id.buttonaddition2next);
+            action(mTextView,mEditText,mbutton);
+                
 
        
+        }
+
+        private void action(TextView mTextView,EditText mEditText,Button mbutton)
+        {
+            mbutton.Enabled = false;
+            mEditText.Text = "";
+            exp expression = GenerateExpression();
+            mTextView.Text = expression.retvalue;
+            mEditText.KeyPress += (object sender, View.KeyEventArgs i) =>
+            {
+                i.Handled = false;
+                if (i.Event.Action == KeyEventActions.Down && i.KeyCode == Keycode.Enter)
+                {
+                    if (mEditText.Text != "")
+                    {
+                        mTextView.Text = Convert.ToString(Verify(mEditText.Text, expression));
+                        mbutton.Enabled = true;
+                        i.Handled = true;
+                    }
+                }
+            };
+            mbutton.Click += delegate
+            {
+                action(mTextView, mEditText, mbutton);
+            };
         }
 
         /// <summary>
@@ -50,6 +75,19 @@ namespace Maths.Resources.Functionalities
             ret.b = RandValue.Rand(1, 9);
             ret.retvalue = Convert.ToString(ret.a) + " + " + Convert.ToString(ret.b) + " =";
             return ret;
+        }
+
+        /// <summary>
+        /// Verify correctness of reply
+        /// </summary>
+        /// <param name="value">Value from user</param>
+        /// <param name="original">Original numbers</param>
+        /// <returns></returns>
+        private bool Verify(string value, exp original)
+        {
+            int tmp = Convert.ToInt32(value);
+            if ((original.a + original.b) == tmp) return true;
+            else return false;
         }
 
     }
