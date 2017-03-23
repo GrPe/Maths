@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace Engine.Functionalities
+namespace Functionalities
 {
     public static class RandValue
     {
         private static Random NValue = new Random();
         private static int VRet;
         /// <summary>
-        /// Return Radom value from the specified range
+        /// Return Random value from the specified range
         /// </summary>
         /// <param name="min">minimal value</param>
         /// <param name="max">maximal value</param>
