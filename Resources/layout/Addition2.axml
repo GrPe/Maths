@@ -6,7 +6,7 @@
     p1:layout_height="fill_parent"
     p1:id="@+id/RelativeLayout1">
     <TextView
-        p1:text="5 + 3"
+        p1:text=" "
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:textSize="50dip"

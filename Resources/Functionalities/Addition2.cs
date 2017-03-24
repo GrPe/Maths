@@ -42,6 +42,7 @@ namespace Maths.Resources.Functionalities
 
         private void action(TextView mTextView,EditText mEditText,Button mbutton)
         {
+
             mbutton.Enabled = false;
             mEditText.Text = "";
             exp expression = GenerateExpression();
