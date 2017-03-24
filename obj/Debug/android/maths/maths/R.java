@@ -23,8 +23,8 @@ public final class R {
         public static final int buttoninfo=0x7f05000b;
         public static final int buttonlearn=0x7f050009;
         public static final int buttonstatistics=0x7f05000a;
-        public static final int editText=0x7f050004;
-        public static final int textView1=0x7f050003;
+        public static final int edittextAddition2=0x7f050004;
+        public static final int textviewAddition2=0x7f050003;
         public static final int textviewinfo=0x7f050000;
     }
     public static final class layout {

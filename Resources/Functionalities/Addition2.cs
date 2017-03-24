@@ -30,8 +30,8 @@ namespace Maths.Resources.Functionalities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Addition2);
 
-            TextView mTextView = FindViewById<TextView>(Resource.Id.textView1); //Rename!!!
-            EditText mEditText = FindViewById<EditText>(Resource.Id.editText); //Rename !!!
+            TextView mTextView = FindViewById<TextView>(Resource.Id.textviewAddition2);
+            EditText mEditText = FindViewById<EditText>(Resource.Id.edittextAddition2);
             Button mbutton = FindViewById<Button>(Resource.Id.buttonaddition2next);
             action(mTextView,mEditText,mbutton);
             mbutton.Click += delegate

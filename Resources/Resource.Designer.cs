@@ -88,10 +88,10 @@ namespace Maths
 			public const int buttonstatistics = 2131034122;
 			
 			// aapt resource value: 0x7f050004
-			public const int editText = 2131034116;
+			public const int edittextAddition2 = 2131034116;
 			
 			// aapt resource value: 0x7f050003
-			public const int textView1 = 2131034115;
+			public const int textviewAddition2 = 2131034115;
 			
 			// aapt resource value: 0x7f050000
 			public const int textviewinfo = 2131034112;
