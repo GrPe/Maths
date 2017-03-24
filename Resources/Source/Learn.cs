@@ -16,25 +16,27 @@ namespace Maths.Resources.Source
     [Activity(Label = "Learn")]
     public class Learn : Activity
     {
-        private Dictionary<int,Button> buttons = new Dictionary<int,Button>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
              SetContentView(Resource.Layout.Learn);
-            Set();
-            buttons[1].Click += delegate
-             {
-                 StartActivity(typeof(Addition2));
-             };
-        }
+            #region button1 - Addition2
+            Button button1 = FindViewById<Button>(Resource.Id.buttonAddiction2);
+            button1.Click += delegate
+            {
+                StartActivity(typeof(Addition2));
+            };
+            #endregion
 
-
-        private void Set()
-        {
-            Button tmpbutton = FindViewById<Button>(Resource.Id.buttonAddiction2);
-            buttons.Add(1,tmpbutton);
+            #region button2 - Subtraction2
+            Button button2 = FindViewById<Button>(Resource.Id.buttonSubtraction2);
+            button2.Click += delegate
+            {
+                StartActivity(typeof(Subtraction2));
+            };
+            #endregion
         }
     }
 }

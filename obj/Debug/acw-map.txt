@@ -18,3 +18,7 @@ Maths.Resources.Functionalities.Addition2, Maths;md5e19f32ad73151eb73bc6ab1b3877
 Maths.Resources.Functionalities.Addition2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
 Maths.Resources.Functionalities.Addition2;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
 maths.resources.functionalities.Addition2;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
+Maths.Resources.Functionalities.Subtraction2, Maths;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
+Maths.Resources.Functionalities.Subtraction2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
+Maths.Resources.Functionalities.Subtraction2;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
+maths.resources.functionalities.Subtraction2;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
