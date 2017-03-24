@@ -34,9 +34,10 @@ namespace Maths.Resources.Functionalities
             EditText mEditText = FindViewById<EditText>(Resource.Id.editText); //Rename !!!
             Button mbutton = FindViewById<Button>(Resource.Id.buttonaddition2next);
             action(mTextView,mEditText,mbutton);
-                
-
-       
+            mbutton.Click += delegate
+            {
+                action(mTextView, mEditText, mbutton);
+            };
         }
 
         private void action(TextView mTextView,EditText mEditText,Button mbutton)
@@ -57,10 +58,6 @@ namespace Maths.Resources.Functionalities
                         i.Handled = true;
                     }
                 }
-            };
-            mbutton.Click += delegate
-            {
-                action(mTextView, mEditText, mbutton);
             };
         }
 
