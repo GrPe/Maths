@@ -15,9 +15,9 @@ public final class R {
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f050002;
-        public static final int button2=0x7f050007;
         public static final int button3=0x7f050008;
         public static final int buttonAddiction2=0x7f050006;
+        public static final int buttonSubtraction2=0x7f050007;
         public static final int buttonaddition2next=0x7f050005;
         public static final int buttonexit=0x7f050001;
         public static final int buttoninfo=0x7f05000b;

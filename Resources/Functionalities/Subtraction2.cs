@@ -33,6 +33,11 @@ namespace Maths.Resources.Functionalities
             TextView mTextView = FindViewById<TextView>(Resource.Id.textviewAddition2);
             EditText mEditText = FindViewById<EditText>(Resource.Id.edittextAddition2);
             Button mbutton = FindViewById<Button>(Resource.Id.buttonaddition2next);
+            action(mTextView, mEditText, mbutton);
+            mbutton.Click += delegate
+            {
+                action(mTextView, mEditText, mbutton);
+            };
         }
 
         private void action(TextView mTextView, EditText mEditText, Button mbutton)
@@ -78,7 +83,7 @@ namespace Maths.Resources.Functionalities
         private bool Verify(string value, exp original)
         {
             int tmp = Convert.ToInt32(value);
-            if ((original.a + original.b) == tmp) return true;
+            if ((original.a - original.b) == tmp) return true;
             else return false;
         }
     }
