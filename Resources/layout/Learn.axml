@@ -3,23 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
     <Button
         android:text="Dodawanie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonAddiction2"
-        android:layout_margin="0.0dp" />
+        android:background="#00aced"
+        android:layout_margin="5dip" />
     <Button
         android:text="Odejmowanie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonSubtraction2"
-        android:layout_margin="0.0dp" />
+        android:background="#00aced"
+        android:layout_margin="5dip" />
     <Button
         android:text="Mnożenie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonMultiplication2"
-        android:layout_margin="0.0dp" />
+        android:background="#00aced"
+        android:layout_margin="5dip" />
 </LinearLayout>

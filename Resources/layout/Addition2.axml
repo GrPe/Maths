@@ -4,7 +4,7 @@
     p1:minHeight="25px"
     p1:layout_width="fill_parent"
     p1:layout_height="fill_parent"
-    p1:id="@+id/RelativeLayout1">
+    p1:background="#f7f7f7">
     <TextView
         p1:text=" "
         p1:layout_width="match_parent"
@@ -14,6 +14,7 @@
         p1:layout_margin="10dip"
         p1:layout_marginTop="30dip"
         p1:id="@+id/textviewAddition2"
+        p1:textColor="#000000"
         p1:layout_centerHorizontal="true" />
     <EditText
         p1:inputType="number"
@@ -24,6 +25,7 @@
         p1:layout_marginTop="30dip"
         p1:textSize="50dip"
         p1:layout_below="@id/textviewAddition2"
+        p1:textColor="#000000"
         p1:layout_centerHorizontal="true" />
     <Button
         p1:id="@+id/buttonaddition2next"
@@ -31,5 +33,6 @@
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:layout_below="@id/edittextAddition2"
+        p1:background="#00aced"
         p1:layout_marginTop="30px" />
 </RelativeLayout>
