@@ -83,8 +83,7 @@ namespace Maths.Resources.Functionalities
         private bool Verify(string value, exp original)
         {
             int tmp = Convert.ToInt32(value);
-            if ((original.a - original.b) == tmp) return true;
-            else return false;
+            return (original.a - original.b == tmp);
         }
     }
 }
