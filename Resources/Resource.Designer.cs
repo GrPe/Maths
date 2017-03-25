@@ -63,11 +63,11 @@ namespace Maths
 			// aapt resource value: 0x7f050002
 			public const int RelativeLayout1 = 2131034114;
 			
-			// aapt resource value: 0x7f050008
-			public const int button3 = 2131034120;
-			
 			// aapt resource value: 0x7f050006
 			public const int buttonAddiction2 = 2131034118;
+			
+			// aapt resource value: 0x7f050008
+			public const int buttonMultiplication2 = 2131034120;
 			
 			// aapt resource value: 0x7f050007
 			public const int buttonSubtraction2 = 2131034119;

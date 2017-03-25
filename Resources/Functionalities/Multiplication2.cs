@@ -14,11 +14,11 @@ using Functionalities;
 
 namespace Maths.Resources.Functionalities
 {
-    [Activity(Label = "Addition2")]
-    public class Addition2 : Activity
+    [Activity(Label = "Multiplication2")]
+    public class Multiplication2 : Activity
     {
         //struktura przechowujaca dane wylosowanego dzialania
-        private struct exp 
+        private struct exp
         {
             public int a;
             public int b;
@@ -33,14 +33,14 @@ namespace Maths.Resources.Functionalities
             TextView mTextView = FindViewById<TextView>(Resource.Id.textviewAddition2);
             EditText mEditText = FindViewById<EditText>(Resource.Id.edittextAddition2);
             Button mbutton = FindViewById<Button>(Resource.Id.buttonaddition2next);
-            action(mTextView,mEditText,mbutton);
+            action(mTextView, mEditText, mbutton);
             mbutton.Click += delegate
             {
                 action(mTextView, mEditText, mbutton);
             };
         }
 
-        private void action(TextView mTextView,EditText mEditText,Button mbutton)
+        private void action(TextView mTextView, EditText mEditText, Button mbutton)
         {
 
             mbutton.Enabled = false;
@@ -71,7 +71,7 @@ namespace Maths.Resources.Functionalities
             exp ret = new exp();
             ret.a = RandValue.Rand(1, 9);
             ret.b = RandValue.Rand(1, 9);
-            ret.retvalue = Convert.ToString(ret.a) + " + " + Convert.ToString(ret.b) + " =";
+            ret.retvalue = Convert.ToString(ret.a) + " * " + Convert.ToString(ret.b) + " =";
             return ret;
         }
 
@@ -84,8 +84,7 @@ namespace Maths.Resources.Functionalities
         private bool Verify(string value, exp original)
         {
             int tmp = Convert.ToInt32(value);
-            return (original.a + original.b == tmp);
+            return (original.a * original.b == tmp);
         }
-
     }
 }

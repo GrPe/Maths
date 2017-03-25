@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Functionalities\Addition2.cs" />
+    <Compile Include="Resources\Functionalities\Multiplication2.cs" />
     <Compile Include="Resources\Functionalities\RandValue.cs" />
     <Compile Include="Resources\Functionalities\Subtraction2.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

@@ -37,6 +37,14 @@ namespace Maths.Resources.Source
                 StartActivity(typeof(Subtraction2));
             };
             #endregion
+
+            #region Multiplication2
+            Button button3 = FindViewById<Button>(Resource.Id.buttonMultiplication2);
+            button3.Click += delegate
+            {
+                StartActivity(typeof(Multiplication2));
+            };
+            #endregion
         }
     }
 }
