@@ -1,0 +1,28 @@
+Maths.MainActivity, Maths;md502ec723c28804832e41ec886bb23ac8d.MainActivity
+Maths.MainActivity, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md502ec723c28804832e41ec886bb23ac8d.MainActivity
+Maths.MainActivity;md502ec723c28804832e41ec886bb23ac8d.MainActivity
+maths.MainActivity;md502ec723c28804832e41ec886bb23ac8d.MainActivity
+Maths.Resources.Source.Aboutinfo, Maths;md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo
+Maths.Resources.Source.Aboutinfo, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo
+Maths.Resources.Source.Aboutinfo;md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo
+maths.resources.source.Aboutinfo;md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo
+Maths.Resources.Source.Learn, Maths;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
+Maths.Resources.Source.Learn, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
+Maths.Resources.Source.Learn;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
+maths.resources.source.Learn;md593e2e1c2f3bdedaaef639468a62eb3eb.Learn
+Maths.Resources.Source.Stats, Maths;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
+Maths.Resources.Source.Stats, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
+Maths.Resources.Source.Stats;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
+maths.resources.source.Stats;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
+Maths.Resources.Functionalities.Addition2, Maths;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
+Maths.Resources.Functionalities.Addition2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
+Maths.Resources.Functionalities.Addition2;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
+maths.resources.functionalities.Addition2;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
+Maths.Resources.Functionalities.Multiplication2, Maths;md5e19f32ad73151eb73bc6ab1b38770845.Multiplication2
+Maths.Resources.Functionalities.Multiplication2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e19f32ad73151eb73bc6ab1b38770845.Multiplication2
+Maths.Resources.Functionalities.Multiplication2;md5e19f32ad73151eb73bc6ab1b38770845.Multiplication2
+maths.resources.functionalities.Multiplication2;md5e19f32ad73151eb73bc6ab1b38770845.Multiplication2
+Maths.Resources.Functionalities.Subtraction2, Maths;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
+Maths.Resources.Functionalities.Subtraction2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
+Maths.Resources.Functionalities.Subtraction2;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
+maths.resources.functionalities.Subtraction2;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
