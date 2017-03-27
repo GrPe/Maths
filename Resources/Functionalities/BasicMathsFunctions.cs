@@ -12,6 +12,18 @@ using Android.Widget;
 
 namespace Functionalities
 {
+    class BasicMathsStructures
+    {
+        /// <summary>
+        /// Przechowuje wyrazenie zlozone z 2 liczb
+        /// </summary>
+        public struct ValueInt2
+        {
+            public int a;
+            public int b;
+            public string displayvalue;
+        }
+    }
 
     static class BasicMathsFunctions
     {

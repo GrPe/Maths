@@ -17,14 +17,6 @@ namespace Maths.Resources.Activities
     [Activity(Label = "Addition2")]
     public class Addition2 : Activity
     {
-        //struktura przechowujaca dane wylosowanego dzialania
-        private struct exp 
-        {
-            public int a;
-            public int b;
-            public string retvalue;
-        }
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -45,8 +37,8 @@ namespace Maths.Resources.Activities
 
             mbutton.Enabled = false;
             mEditText.Text = "";
-            exp expression = GenerateExpression();
-            mTextView.Text = expression.retvalue;
+            var expression = GenerateExpression();
+            mTextView.Text = expression.displayvalue;
             mEditText.KeyPress += (object sender, View.KeyEventArgs i) =>
             {
                 i.Handled = false;
@@ -66,12 +58,12 @@ namespace Maths.Resources.Activities
         /// Generuje dzialanie do postawienia w polu mTextView.Text;
         /// </summary>
         /// <returns></returns>
-        private exp GenerateExpression()
+        private BasicMathsStructures.ValueInt2 GenerateExpression()
         {
-            exp ret = new exp();
+            var ret = new BasicMathsStructures.ValueInt2();
             ret.a = RandValue.Rand(1, 9);
             ret.b = RandValue.Rand(1, 9);
-            ret.retvalue = Convert.ToString(ret.a) + " + " + Convert.ToString(ret.b) + " =";
+            ret.displayvalue = Convert.ToString(ret.a) + " + " + Convert.ToString(ret.b) + " =";
             return ret;
         }
 
