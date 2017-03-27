@@ -54,7 +54,7 @@ namespace Maths.Resources.Activities
                 {
                     if (mEditText.Text != "")
                     {
-                        mTextView.Text = Convert.ToString(Verify(mEditText.Text, expression));
+                        mTextView.Text = Convert.ToString(BasicMathsFunctions.VerifySubtraction(mEditText.Text, expression.a,expression.b));
                         mbutton.Enabled = true;
                         i.Handled = true;
                     }
@@ -72,18 +72,6 @@ namespace Maths.Resources.Activities
             ret.b = RandValue.Rand(1, ret.a);
             ret.retvalue = Convert.ToString(ret.a) + " - " + Convert.ToString(ret.b) + " =";
             return ret;
-        }
-
-        /// <summary>
-        /// Verify correctness of reply
-        /// </summary>
-        /// <param name="value">Value from user</param>
-        /// <param name="original">Original numbers</param>
-        /// <returns></returns>
-        private bool Verify(string value, exp original)
-        {
-            int tmp = Convert.ToInt32(value);
-            return (original.a - original.b == tmp);
         }
     }
 }
