@@ -14,15 +14,15 @@ Maths.Resources.Source.Stats, Maths;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
 Maths.Resources.Source.Stats, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
 Maths.Resources.Source.Stats;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
 maths.resources.source.Stats;md593e2e1c2f3bdedaaef639468a62eb3eb.Stats
-Maths.Resources.Functionalities.Addition2, Maths;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
-Maths.Resources.Functionalities.Addition2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
-Maths.Resources.Functionalities.Addition2;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
-maths.resources.functionalities.Addition2;md5e19f32ad73151eb73bc6ab1b38770845.Addition2
-Maths.Resources.Functionalities.Multiplication2, Maths;md5e19f32ad73151eb73bc6ab1b38770845.Multiplication2
-Maths.Resources.Functionalities.Multiplication2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e19f32ad73151eb73bc6ab1b38770845.Multiplication2
-Maths.Resources.Functionalities.Multiplication2;md5e19f32ad73151eb73bc6ab1b38770845.Multiplication2
-maths.resources.functionalities.Multiplication2;md5e19f32ad73151eb73bc6ab1b38770845.Multiplication2
-Maths.Resources.Functionalities.Subtraction2, Maths;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
-Maths.Resources.Functionalities.Subtraction2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
-Maths.Resources.Functionalities.Subtraction2;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
-maths.resources.functionalities.Subtraction2;md5e19f32ad73151eb73bc6ab1b38770845.Subtraction2
+Maths.Resources.Activities.Addition2, Maths;md5230d9ba631e4ee85b4463801f1dec6e9.Addition2
+Maths.Resources.Activities.Addition2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5230d9ba631e4ee85b4463801f1dec6e9.Addition2
+Maths.Resources.Activities.Addition2;md5230d9ba631e4ee85b4463801f1dec6e9.Addition2
+maths.resources.activities.Addition2;md5230d9ba631e4ee85b4463801f1dec6e9.Addition2
+Maths.Resources.Activities.Multiplication2, Maths;md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2
+Maths.Resources.Activities.Multiplication2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2
+Maths.Resources.Activities.Multiplication2;md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2
+maths.resources.activities.Multiplication2;md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2
+Maths.Resources.Activities.Subtraction2, Maths;md5230d9ba631e4ee85b4463801f1dec6e9.Subtraction2
+Maths.Resources.Activities.Subtraction2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5230d9ba631e4ee85b4463801f1dec6e9.Subtraction2
+Maths.Resources.Activities.Subtraction2;md5230d9ba631e4ee85b4463801f1dec6e9.Subtraction2
+maths.resources.activities.Subtraction2;md5230d9ba631e4ee85b4463801f1dec6e9.Subtraction2

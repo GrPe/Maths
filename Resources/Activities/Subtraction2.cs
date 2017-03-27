@@ -12,7 +12,7 @@ using Android.Widget;
 
 using Functionalities;
 
-namespace Maths.Resources.Functionalities
+namespace Maths.Resources.Activities
 {
     [Activity(Label = "Subtraction2")]
     public class Subtraction2 : Activity

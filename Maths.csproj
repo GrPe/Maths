@@ -52,10 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Resources\Functionalities\Addition2.cs" />
-    <Compile Include="Resources\Functionalities\Multiplication2.cs" />
+    <Compile Include="Resources\Activities\Addition2.cs" />
+    <Compile Include="Resources\Functionalities\BasicMathsFunctions.cs" />
+    <Compile Include="Resources\Activities\Multiplication2.cs" />
     <Compile Include="Resources\Functionalities\RandValue.cs" />
-    <Compile Include="Resources\Functionalities\Subtraction2.cs" />
+    <Compile Include="Resources\Activities\Subtraction2.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Source\AboutInfo.cs" />

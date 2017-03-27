@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Maths.Resources.Functionalities;
+using Maths.Resources.Activities;
 
 using Android.App;
 using Android.Content;
@@ -38,7 +38,7 @@ namespace Maths.Resources.Source
             };
             #endregion
 
-            #region Multiplication2
+            #region button3 - Multiplication2
             Button button3 = FindViewById<Button>(Resource.Id.buttonMultiplication2);
             button3.Click += delegate
             {

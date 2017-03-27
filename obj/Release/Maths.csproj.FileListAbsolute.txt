@@ -33,5 +33,6 @@ D:\Documents\Projekty\2017\Maths\obj\Release\android\assets\mscorlib.dll.mdb
 D:\Documents\Projekty\2017\Maths\obj\Release\android\assets\System.Core.dll.mdb
 D:\Documents\Projekty\2017\Maths\obj\Release\android\assets\System.dll.mdb
 D:\Documents\Projekty\2017\Maths\obj\Release\android\assets\System.Runtime.Serialization.dll.mdb
+D:\Documents\Projekty\2017\Maths\obj\Release\Maths.csprojResolveAssemblyReference.cache
 D:\Documents\Projekty\2017\Maths\obj\Release\Maths.dll.mdb
 D:\Documents\Projekty\2017\Maths\bin\Release\Maths.dll.mdb
