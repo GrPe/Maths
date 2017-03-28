@@ -55,6 +55,7 @@
     <Compile Include="Resources\Activities\Addition2.cs" />
     <Compile Include="Resources\Functionalities\BasicMathsFunctions.cs" />
     <Compile Include="Resources\Activities\Multiplication2.cs" />
+    <Compile Include="Resources\Functionalities\BasicMathsStructures.cs" />
     <Compile Include="Resources\Functionalities\RandValue.cs" />
     <Compile Include="Resources\Activities\Subtraction2.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

@@ -14,7 +14,6 @@ namespace Functionalities
 {
     class BasicMathsStructures
     { 
-        
       /// <summary>
       /// Przechowuje wyrazenie zlozone z 2 liczb
       /// </summary>
