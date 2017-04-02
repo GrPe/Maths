@@ -25,8 +25,8 @@ namespace Maths.Resources.Activities
 
             TextView mTextView = FindViewById<TextView>(Resource.Id.textviewAddition2);
             EditText mEditText = FindViewById<EditText>(Resource.Id.edittextAddition2);
-            Button mbutton = FindViewById<Button>(Resource.Id.buttonaddition2next);
-            Button showbutton = FindViewById<Button>(Resource.Id.buttonbasicmathsshowtrue);
+            Button mbutton = FindViewById<Button>(Resource.Id.buttonnext);
+            Button showbutton = FindViewById<Button>(Resource.Id./*brak_przycisku*/);
             action(mTextView,mEditText,mbutton,showbutton);
             mbutton.Click += delegate
             {
