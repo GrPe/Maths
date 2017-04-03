@@ -76,7 +76,7 @@
     <AndroidResource Include="Resources\layout\Stats.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Addition2.axml">
+    <AndroidResource Include="Resources\layout\View_BaseMaths.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

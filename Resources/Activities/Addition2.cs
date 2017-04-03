@@ -18,32 +18,28 @@ namespace Maths.Resources.Activities
     public class Addition2 : Activity
     {
         BasicMathsStructures.ValueInt2 expression = new BasicMathsStructures.ValueInt2();
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.Addition2);
+            SetContentView(Resource.Layout.View_BaseMaths);
 
-            TextView mTextView = FindViewById<TextView>(Resource.Id.textviewAddition2);
-            EditText mEditText = FindViewById<EditText>(Resource.Id.edittextAddition2);
-            Button mbutton = FindViewById<Button>(Resource.Id.buttonnext);
-            Button showbutton = FindViewById<Button>(Resource.Id./*brak_przycisku*/);
-            action(mTextView,mEditText,mbutton,showbutton);
+            TextView mTextView = FindViewById<TextView>(Resource.Id.textview_View_BaseMahs);
+            EditText mEditText = FindViewById<EditText>(Resource.Id.edittext_View_BaseMaths);
+            Button mbutton = FindViewById<Button>(Resource.Id.button_View_BaseMaths_Next);
+            action(mTextView,mEditText,mbutton);
+            bool flag = true;
             mbutton.Click += delegate
             {
-                action(mTextView, mEditText, mbutton,showbutton);
-            };
-            showbutton.Click += delegate
-            {
-                mTextView.Text =Convert.ToString(ShowCorectAnswer(expression.a, expression.b));
+                if (flag) action(mTextView, mEditText, mbutton);
+                else /*code false answer*/
             };
         }
 
-        private void action(TextView mTextView,EditText mEditText,Button mbutton,Button showbutton)
+        private void action(TextView mTextView,EditText mEditText,Button mbutton)
         {
 
             mbutton.Enabled = false;
-            showbutton.Enabled = false;
-            showbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
             mEditText.Text = "";
             expression = GenerateExpression();
@@ -61,15 +57,12 @@ namespace Maths.Resources.Activities
                             mTextView.Text = "Dobrze!";
                             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
                             mbutton.Enabled = true;
-                            showbutton.Enabled = false;
                         }
                         if(!BasicMathsFunctions.VerifyAddition(mEditText.Text, expression.a, expression.b))
                         {
                             mTextView.Text = "èle!";
                             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
-                            showbutton.SetBackgroundColor(Android.Graphics.Color.Red); //red
                             mbutton.Enabled = true;
-                            showbutton.Enabled = true;
                         }
                         i.Handled = true;
                     }

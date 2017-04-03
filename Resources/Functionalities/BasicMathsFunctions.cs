@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using static Functionalities.BasicMathsStructures;
 
 namespace Functionalities
 {
@@ -22,10 +23,9 @@ namespace Functionalities
         /// <param name="a">original value a</param>
         /// <param name="b">original value b</param>
         /// <returns></returns>
-        public static bool VerifyAddition(string value, int a, int b)
+        public static bool VerifyAddition(string value,ValueInt2 exp )
         {
-            int tmp = Convert.ToInt32(value);
-            return (a+b == tmp);
+            return (exp.a + exp.b == Convert.ToInt32(value));
         }
 
         /// <summary>
@@ -35,10 +35,9 @@ namespace Functionalities
         /// <param name="a">original value a</param>
         /// <param name="b">original value b</param>
         /// <returns></returns>
-        public static bool VerifySubtraction(string value, int a, int b)
+        public static bool VerifySubtraction(string value, ValueInt2 exp)
         {
-            int tmp = Convert.ToInt32(value);
-            return (a - b == tmp);
+            return (exp.a - exp.b == Convert.ToInt32(value));
         }
 
         /// <summary>
@@ -48,10 +47,9 @@ namespace Functionalities
         /// <param name="a">original value a</param>
         /// <param name="b">original value b</param>
         /// <returns></returns>
-        public static bool VerifyMultiplication(string value, int a, int b)
+        public static bool VerifyMultiplication(string value, ValueInt2 exp)
         {
-            int tmp = Convert.ToInt32(value);
-            return (a * b == tmp);
+            return (exp.a * exp.b == Convert.ToInt32(value));
         }
     }
 }
