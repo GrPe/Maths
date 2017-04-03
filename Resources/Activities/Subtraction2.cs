@@ -17,27 +17,31 @@ namespace Maths.Resources.Activities
     [Activity(Label = "Subtraction2")]
     public class Subtraction2 : Activity
     {
+        BasicMathsStructures.ValueInt2 expression = new BasicMathsStructures.ValueInt2();
+        bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.Addition2);
+            SetContentView(Resource.Layout.View_BaseMaths);
 
-            TextView mTextView = FindViewById<TextView>(Resource.Id.textviewAddition2);
-            EditText mEditText = FindViewById<EditText>(Resource.Id.edittextAddition2);
-            Button mbutton = FindViewById<Button>(Resource.Id.buttonaddition2next);
-            action(mTextView, mEditText, mbutton);
+            TextView mTextView = FindViewById<TextView>(Resource.Id.textview_View_BaseMahs);
+            EditText mEditText = FindViewById<EditText>(Resource.Id.edittext_View_BaseMaths);
+            Button mbutton = FindViewById<Button>(Resource.Id.button_View_BaseMaths_Next);
+            Action(mTextView, mEditText, mbutton);
             mbutton.Click += delegate
             {
-                action(mTextView, mEditText, mbutton);
+                if (flag) Action(mTextView, mEditText, mbutton);
+                else FalseAnswer(mTextView, mEditText);
             };
         }
 
-        private void action(TextView mTextView, EditText mEditText, Button mbutton)
+        private void Action(TextView mTextView, EditText mEditText, Button mbutton) //obsluga wprowadzania danych przez uzytkownika
         {
-
             mbutton.Enabled = false;
+            mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
             mEditText.Text = "";
-            var expression = GenerateExpression();
+            expression = GenerateExpression();
             mTextView.Text = expression.displayvalue;
             mEditText.KeyPress += (object sender, View.KeyEventArgs i) =>
             {
@@ -46,8 +50,20 @@ namespace Maths.Resources.Activities
                 {
                     if (mEditText.Text != "")
                     {
-                        mTextView.Text = Convert.ToString(BasicMathsFunctions.VerifySubtraction(mEditText.Text, expression.a,expression.b));
-                        mbutton.Enabled = true;
+                        if (BasicMathsFunctions.VerifySubtraction(mEditText.Text, expression))
+                        {
+                            mTextView.Text = "Dobrze!";
+                            mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
+                            mbutton.Enabled = true;
+                            flag = true;
+                        }
+                        if (!BasicMathsFunctions.VerifySubtraction(mEditText.Text, expression))
+                        {
+                            mTextView.Text = "èle!";
+                            mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
+                            mbutton.Enabled = true;
+                            flag = false;
+                        }
                         i.Handled = true;
                     }
                 }
@@ -64,6 +80,14 @@ namespace Maths.Resources.Activities
             ret.b = RandValue.Rand(1, ret.a);
             ret.displayvalue = Convert.ToString(ret.a) + " - " + Convert.ToString(ret.b) + " =";
             return ret;
+        }
+
+        //wyswietla prawidlowa odpowiedz gdy user popelnil blad
+        private void FalseAnswer(TextView mTextView, EditText mEditText)
+        {
+            mTextView.Text = "Poprawna odpowiedü:";
+            mEditText.Text = Convert.ToString(expression.a * expression.b);
+            flag = true;
         }
     }
 }
