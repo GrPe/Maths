@@ -18,7 +18,7 @@ namespace Maths.Resources.Activities
     public class Addition2 : Activity
     {
         BasicMathsStructures.ValueInt2 expression = new BasicMathsStructures.ValueInt2();
-        bool flag = true;
+        bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,7 +36,7 @@ namespace Maths.Resources.Activities
             };
         }
 
-        private void Action(TextView mTextView,EditText mEditText,Button mbutton)
+        private void Action(TextView mTextView,EditText mEditText,Button mbutton) //obsluga wprowadzania danych przez uzytkownika
         {
             mbutton.Enabled = false;
             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
@@ -82,8 +82,9 @@ namespace Maths.Resources.Activities
             ret.displayvalue = Convert.ToString(ret.a) + " + " + Convert.ToString(ret.b) + " =";
             return ret;
         }
-
-        private void FalseAnswer(TextView mTextView, EditText mEditText)
+        
+        //wyswietla prawidlowa odpowiedz gdy user popelnil blad
+        private void FalseAnswer(TextView mTextView, EditText mEditText) 
         {
             mTextView.Text = "Poprawna odpowiedü:";
             mEditText.Text = Convert.ToString(expression.a + expression.b);
