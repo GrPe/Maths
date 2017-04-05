@@ -20,8 +20,7 @@ namespace Functionalities
         /// Verify correctness of Addition
         /// </summary>
         /// <param name="value">value from user</param>
-        /// <param name="a">original value a</param>
-        /// <param name="b">original value b</param>
+        /// <param name="exp">original value</param>
         /// <returns></returns>
         public static bool VerifyAddition(string value,ValueInt2 exp )
         {
@@ -32,8 +31,7 @@ namespace Functionalities
         /// Verify correctness of Subtraction
         /// </summary>
         /// <param name="value">value from user</param>
-        /// <param name="a">original value a</param>
-        /// <param name="b">original value b</param>
+        /// <param name="exp">original value</param>
         /// <returns></returns>
         public static bool VerifySubtraction(string value, ValueInt2 exp)
         {
@@ -44,12 +42,32 @@ namespace Functionalities
         /// Verify correctness of Multiplication
         /// </summary>
         /// <param name="value">value from user</param>
-        /// <param name="a">original value a</param>
-        /// <param name="b">original value b</param>
+        /// <param name="exp">original value</param>
         /// <returns></returns>
         public static bool VerifyMultiplication(string value, ValueInt2 exp)
         {
             return (exp.a * exp.b == Convert.ToInt32(value));
+        }
+
+        /// <summary>
+        /// Verify correctness of Division (only integer value)
+        /// </summary>
+        /// <param name="value">value from user</param>
+        /// <param name="exp">original value</param>
+        /// <returns></returns>
+        public static bool VerifyDivision(string value, ValueInt2 exp)
+        {
+            int tmp;
+            try
+            {
+                tmp = exp.a /exp.b;
+            }
+            catch(Exception e)
+            {
+                return false;
+            }
+
+            return value == Convert.ToString(tmp);
         }
     }
 }
