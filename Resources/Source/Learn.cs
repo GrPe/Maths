@@ -45,6 +45,14 @@ namespace Maths.Resources.Source
                 StartActivity(typeof(Multiplication2));
             };
             #endregion
+
+            #region button4 - Division2
+            Button button4 = FindViewById<Button>(Resource.Id.buttonDivision2);
+            button4.Click += delegate
+            {
+                StartActivity(typeof(Division2));
+            };
+            #endregion
         }
     }
 }

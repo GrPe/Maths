@@ -18,6 +18,10 @@ Maths.Resources.Activities.Addition2, Maths;md5230d9ba631e4ee85b4463801f1dec6e9.
 Maths.Resources.Activities.Addition2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5230d9ba631e4ee85b4463801f1dec6e9.Addition2
 Maths.Resources.Activities.Addition2;md5230d9ba631e4ee85b4463801f1dec6e9.Addition2
 maths.resources.activities.Addition2;md5230d9ba631e4ee85b4463801f1dec6e9.Addition2
+Maths.Resources.Activities.Division2, Maths;md5230d9ba631e4ee85b4463801f1dec6e9.Division2
+Maths.Resources.Activities.Division2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5230d9ba631e4ee85b4463801f1dec6e9.Division2
+Maths.Resources.Activities.Division2;md5230d9ba631e4ee85b4463801f1dec6e9.Division2
+maths.resources.activities.Division2;md5230d9ba631e4ee85b4463801f1dec6e9.Division2
 Maths.Resources.Activities.Multiplication2, Maths;md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2
 Maths.Resources.Activities.Multiplication2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2
 Maths.Resources.Activities.Multiplication2;md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2

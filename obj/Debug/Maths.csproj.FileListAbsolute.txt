@@ -14,7 +14,6 @@ D:\Documents\Projekty\2017\Maths\obj\Debug\uploadflags.txt
 D:\Documents\Projekty\2017\Maths\obj\Debug\res\layout\aboutinfo.xml
 D:\Documents\Projekty\2017\Maths\obj\Debug\res\layout\learn.xml
 D:\Documents\Projekty\2017\Maths\obj\Debug\res\layout\stats.xml
-D:\Documents\Projekty\2017\Maths\obj\Debug\res\layout\addition2.xml
 D:\Documents\Projekty\2017\Maths\bin\Debug\Maths.dll.mdb
 D:\Documents\Projekty\2017\Maths\bin\Debug\Java.Interop.dll.mdb
 D:\Documents\Projekty\2017\Maths\bin\Debug\Mono.Android.dll.mdb
@@ -39,5 +38,6 @@ D:\Documents\Projekty\2017\Maths\obj\Debug\android\assets\System.Runtime.Seriali
 D:\Documents\Projekty\2017\Maths\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 D:\Documents\Projekty\2017\Maths\obj\Debug\android\assets\System.Xml.dll.mdb
 D:\Documents\Projekty\2017\Maths\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\Documents\Projekty\2017\Maths\obj\Debug\res\layout\view_basemaths.xml
 D:\Documents\Projekty\2017\Maths\obj\Debug\Maths.dll.mdb
 D:\Documents\Projekty\2017\Maths\bin\Debug\Maths.dll.mdb

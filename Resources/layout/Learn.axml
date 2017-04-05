@@ -26,4 +26,11 @@
         android:id="@+id/buttonMultiplication2"
         android:background="#00aced"
         android:layout_margin="5dip" />
+    <Button
+        android:text="Dzielenie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDivision2"
+        android:background="#00aced"
+        android:layout_margin="5dip" />
 </LinearLayout>
