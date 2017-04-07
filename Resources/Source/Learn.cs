@@ -53,6 +53,15 @@ namespace Maths.Resources.Source
                 StartActivity(typeof(Division2));
             };
             #endregion
+
+            #region button5 - MIX
+            Button button5 = FindViewById<Button>(Resource.Id.buttonMIX);
+            button5.Click += delegate
+             {
+                 StartActivity(typeof(CombinedBasic));
+             };
+
+            #endregion
         }
     }
 }

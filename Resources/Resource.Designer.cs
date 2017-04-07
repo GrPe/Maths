@@ -66,32 +66,35 @@ namespace Maths
 			// aapt resource value: 0x7f050005
 			public const int buttonDivision2 = 2131034117;
 			
+			// aapt resource value: 0x7f050006
+			public const int buttonMIX = 2131034118;
+			
 			// aapt resource value: 0x7f050004
 			public const int buttonMultiplication2 = 2131034116;
 			
 			// aapt resource value: 0x7f050003
 			public const int buttonSubtraction2 = 2131034115;
 			
-			// aapt resource value: 0x7f05000b
-			public const int button_View_BaseMaths_Next = 2131034123;
+			// aapt resource value: 0x7f05000c
+			public const int button_View_BaseMaths_Next = 2131034124;
 			
 			// aapt resource value: 0x7f050001
 			public const int buttonexit = 2131034113;
 			
-			// aapt resource value: 0x7f050008
-			public const int buttoninfo = 2131034120;
-			
-			// aapt resource value: 0x7f050006
-			public const int buttonlearn = 2131034118;
+			// aapt resource value: 0x7f050009
+			public const int buttoninfo = 2131034121;
 			
 			// aapt resource value: 0x7f050007
-			public const int buttonstatistics = 2131034119;
+			public const int buttonlearn = 2131034119;
+			
+			// aapt resource value: 0x7f050008
+			public const int buttonstatistics = 2131034120;
+			
+			// aapt resource value: 0x7f05000b
+			public const int edittext_View_BaseMaths = 2131034123;
 			
 			// aapt resource value: 0x7f05000a
-			public const int edittext_View_BaseMaths = 2131034122;
-			
-			// aapt resource value: 0x7f050009
-			public const int textview_View_BaseMahs = 2131034121;
+			public const int textview_View_BaseMahs = 2131034122;
 			
 			// aapt resource value: 0x7f050000
 			public const int textviewinfo = 2131034112;
