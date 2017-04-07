@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v19</xs:documentation>
-    <xs:documentation>2017-04-05 21:25:22</xs:documentation>
+    <xs:documentation>2017-04-07 23:27:30</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -80,6 +80,7 @@
       <xs:element ref="ListView" />
       <xs:element ref="ExpandableListView" />
       <xs:element ref="fragment" />
+      <xs:element ref="merge" />
     </xs:choice>
   </xs:group>
   <xs:element name="ImageView" type="ImageView">
@@ -1239,5 +1240,18 @@
     <xs:attribute ref="android:layout_marginStart" />
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
+  </xs:complexType>
+  <xs:element name="merge" type="merge">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: merge</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="merge">
+    <xs:complexContent mixed="false">
+      <xs:extension base="java.lang.Object">
+        <xs:attribute ref="tools:parentTag" />
+        <xs:attribute ref="android:style" />
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
 </xs:schema>

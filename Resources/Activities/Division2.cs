@@ -77,10 +77,10 @@ namespace Maths.Resources.Activities
         private BasicMathsStructures.ValueInt2 GenerateExpression()
         {
             var ret = new BasicMathsStructures.ValueInt2();
-            ret.a = RandValue.Rand(2, 30);
+            ret.a = RandValue.Rand(2, 100);
             while (true)
             {
-                ret.b = RandValue.Rand(2, 30);
+                ret.b = RandValue.Rand(2, 100);
                 if (ret.a % ret.b == 0) break;
             }
             ret.displayvalue = Convert.ToString(ret.a) + " \u00f7 " + Convert.ToString(ret.b) + " =";
