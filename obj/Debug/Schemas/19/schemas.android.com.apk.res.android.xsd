@@ -2,7 +2,11 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v19</xs:documentation>
+<<<<<<< HEAD
     <xs:documentation>2017-04-08 19:54:08</xs:documentation>
+=======
+    <xs:documentation>2017-04-07 23:34:40</xs:documentation>
+>>>>>>> 33e7c9226e63f9eebdd43e0e9b993f95aa64ea4f
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>

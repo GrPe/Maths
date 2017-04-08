@@ -17,18 +17,28 @@ public final class R {
         public static final int buttonAddiction2=0x7f050002;
         public static final int buttonCombinedBasic2=0x7f050006;
         public static final int buttonDivision2=0x7f050005;
+        public static final int buttonMIX=0x7f050006;
         public static final int buttonMultiplication2=0x7f050004;
         public static final int buttonSubtraction2=0x7f050003;
+<<<<<<< HEAD
         public static final int button_View_BaseMaths_Next=0x7f05000f;
+=======
+        public static final int button_View_BaseMaths_Next=0x7f05000c;
+>>>>>>> 33e7c9226e63f9eebdd43e0e9b993f95aa64ea4f
         public static final int buttonexit=0x7f050001;
         public static final int buttoninfo=0x7f050009;
         public static final int buttonlearn=0x7f050007;
         public static final int buttonstatistics=0x7f050008;
+<<<<<<< HEAD
         public static final int edittext_View_BaseMaths=0x7f05000e;
         public static final int relativeLayout1=0x7f05000a;
         public static final int switch1=0x7f05000c;
         public static final int textView1=0x7f05000b;
         public static final int textview_View_BaseMahs=0x7f05000d;
+=======
+        public static final int edittext_View_BaseMaths=0x7f05000b;
+        public static final int textview_View_BaseMahs=0x7f05000a;
+>>>>>>> 33e7c9226e63f9eebdd43e0e9b993f95aa64ea4f
         public static final int textviewinfo=0x7f050000;
     }
     public static final class layout {
