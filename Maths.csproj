@@ -54,6 +54,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Activities\Addition2.cs" />
     <Compile Include="Resources\Activities\Division2.cs" />
+    <Compile Include="Resources\Activities\Settings_BasicMaths.cs" />
     <Compile Include="Resources\Functionalities\BasicMathsFunctions.cs" />
     <Compile Include="Resources\Activities\Multiplication2.cs" />
     <Compile Include="Resources\Functionalities\BasicMathsStructures.cs" />
