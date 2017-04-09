@@ -13,7 +13,7 @@
         p1:textSize="25dip"
         p1:textColor="#000000"
         p1:layout_alignParentLeft="true"
-        p1:layout_marginleft="5px" />
+        p1:layout_marginLeft="5px" />
     <Switch
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
@@ -36,19 +36,11 @@
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:layout_toRightOf="@id/X_tv2"
-        p1:id="@id/Switch_Subtraction_S_CM"
+        p1:id="@+id/Switch_Subtraction_S_CM"
         p1:layout_below="@id/Switch_Addittion_S_CM"
         p1:layout_alignParentRight="true"
         p1:layout_alignTop="@id/X_tv2"
         p1:layout_alignBaseline="@id/X_tv2" />
-    <Switch
-        p1:layout_width="wrap_content"
-        p1:layout_height="wrap_content"
-        p1:layout_below="@id/X_tv2"
-        p1:id="@+id/Switch_Multiplication_S_CM"
-        p1:layout_alignParentRight="true"
-        p1:layout_alignTop="@id/X_tv3"
-        p1:layout_alignBaseline="@id/X_tv3" />
     <TextView
         p1:text="Mnożenie"
         p1:layout_width="wrap_content"
@@ -57,6 +49,14 @@
         p1:id="@+id/X_tv3"
         p1:textSize="25dip"
         p1:textColor="#000000" />
+    <Switch
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/X_tv2"
+        p1:id="@+id/Switch_Multiplication_S_CM"
+        p1:layout_alignParentRight="true"
+        p1:layout_alignTop="@id/X_tv3"
+        p1:layout_alignBaseline="@id/X_tv3" />
     <TextView
         p1:text="Dzielenie"
         p1:layout_width="wrap_content"
@@ -72,4 +72,13 @@
         p1:id="@+id/Switch_Division_S_CM"
         p1:layout_alignParentRight="true"
         p1:layout_alignBaseline="@id/X_tv4" />
+    <Button
+        p1:text="Start"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/button_S_CM_Start"
+        p1:layout_below="@id/X_tv4"
+        p1:layout_centerHorizontal="true"
+        p1:layout_marginTop="10px"
+        p1:background="#00aced" />
 </RelativeLayout>

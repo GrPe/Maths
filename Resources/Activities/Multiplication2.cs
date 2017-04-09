@@ -77,8 +77,8 @@ namespace Maths.Resources.Activities
         private BasicMathsStructures.ValueInt2 GenerateExpression()
         {
             var ret = new BasicMathsStructures.ValueInt2();
-            ret.a = RandValue.Rand(1, 9);
-            ret.b = RandValue.Rand(1, 9);
+            ret.a = RandValue.Rand(1, 10);
+            ret.b = RandValue.Rand(1, 10);
             ret.displayvalue = Convert.ToString(ret.a) + " * " + Convert.ToString(ret.b) + " =";
             return ret;
         }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Maths.Maths" android:versionCode="1" android:versionName="1.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="Maths" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="Maths" android:name="md502ec723c28804832e41ec886bb23ac8d.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="AboutInfo" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo" />
+    <activity android:label="Learn" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Learn" />
+    <activity android:label="Stats" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Stats" />
+    <activity android:label="Addition2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Addition2" />
+    <activity android:label="Division2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Division2" />
+    <activity android:label="Settings_BasicMaths" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Settings_BasicMaths" />
+    <activity android:label="Multiplication2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2" />
+    <activity android:label="Subtraction2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Subtraction2" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Maths.Maths.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.Maths.Maths" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
