@@ -86,7 +86,7 @@ namespace Maths.Resources.Activities
         private void FalseAnswer(TextView mTextView, EditText mEditText)
         {
             mTextView.Text = "Poprawna odpowiedü:";
-            mEditText.Text = Convert.ToString(expression.a - expression.b);
+            mEditText.Text = Convert.ToString(expression.correctanswer);
             flag = true;
         }
     }

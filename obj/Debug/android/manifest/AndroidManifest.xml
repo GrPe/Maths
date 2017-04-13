@@ -14,9 +14,11 @@
     <activity android:label="AboutInfo" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo" />
     <activity android:label="Learn" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Learn" />
     <activity android:label="Stats" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Stats" />
+    <activity android:label="IntegerActivity" android:name="md5bf7134fd40824433040c991a616c493c.IntegerActivity" />
     <activity android:label="Addition2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Addition2" />
     <activity android:label="Division2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Division2" />
     <activity android:label="Settings_BasicMaths" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Settings_BasicMaths" />
+    <activity android:label="Subtraction22" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Subtraction22" />
     <activity android:label="Multiplication2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2" />
     <activity android:label="Subtraction2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Subtraction2" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Maths.Maths.mono.MonoRuntimeProvider.__mono_init__" />

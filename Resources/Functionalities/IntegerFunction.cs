@@ -1,14 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using static Functionalities.BasicMathsStructures;
 
 namespace Functionalities
@@ -70,6 +60,18 @@ namespace Functionalities
             }
 
             return value == Convert.ToString(tmp);
+        }
+
+        public delegate ValueInt2 DelGenerate();
+
+        public static ValueInt2 GenerateSubtraction()
+        {
+            var ret = new ValueInt2();
+            ret.a = RandValue.Rand(1, 100);
+            ret.b = RandValue.Rand(1, ret.a);
+            ret.correctanswer = ret.a - ret.b;
+            ret.displayvalue = Convert.ToString(ret.a) + " - " + Convert.ToString(ret.b) + " =";
+            return ret;
         }
     }
 }

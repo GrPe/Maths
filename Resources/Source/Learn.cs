@@ -34,7 +34,7 @@ namespace Maths.Resources.Source
             Button button2 = FindViewById<Button>(Resource.Id.buttonSubtraction2);
             button2.Click += delegate
             {
-                StartActivity(typeof(Subtraction2));
+                StartActivity(typeof(Subtraction22));
             };
             #endregion
 

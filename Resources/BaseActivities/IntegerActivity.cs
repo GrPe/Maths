@@ -19,6 +19,8 @@ namespace Maths.Resources.BaseActivities
         BasicMathsStructures.ValueInt2 expression = new BasicMathsStructures.ValueInt2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
 
+        internal IntegerFunctions.DelCompare delcom;
+        internal IntegerFunctions.DelGenerate delgen;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,6 +30,7 @@ namespace Maths.Resources.BaseActivities
             TextView mTextView = FindViewById<TextView>(Resource.Id.textview_View_BaseMahs);
             EditText mEditText = FindViewById<EditText>(Resource.Id.edittext_View_BaseMaths);
             Button mbutton = FindViewById<Button>(Resource.Id.button_View_BaseMaths_Next);
+            Initialize();
 
             Action(mTextView, mEditText, mbutton);
             mbutton.Click += delegate
@@ -37,9 +40,9 @@ namespace Maths.Resources.BaseActivities
             };
         }
 
-        protected void InitializeCompare()
+        public virtual void Initialize()
         {
-
+            //IsEmpty
         }
 
         private void Action(TextView mTextView, EditText mEditText, Button mbutton) //obsluga wprowadzania danych przez uzytkownika
@@ -47,7 +50,7 @@ namespace Maths.Resources.BaseActivities
             mbutton.Enabled = false;
             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
             mEditText.Text = "";
-            expression = GenerateExpression();
+            expression = delgen();
             mTextView.Text = expression.displayvalue;
             mEditText.KeyPress += (object sender, View.KeyEventArgs i) =>
             {
@@ -56,14 +59,14 @@ namespace Maths.Resources.BaseActivities
                 {
                     if (mEditText.Text != "")
                     {
-                        if (IntegerFunctions.DelCompare(mEditText.Text, expression))
+                        if (delcom(mEditText.Text, expression))
                         {
                             mTextView.Text = "Dobrze!";
                             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
                             mbutton.Enabled = true;
                             flag = true;
                         }
-                        if (!IntegerFunctions.DelCompare(mEditText.Text, expression))
+                        if (!delcom(mEditText.Text, expression))
                         {
                             mTextView.Text = "èle!";
                             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
@@ -74,6 +77,14 @@ namespace Maths.Resources.BaseActivities
                     }
                 }
             };
+        }
+
+        //wyswietla prawidlowa odpowiedz gdy user popelnil blad
+        private void FalseAnswer(TextView mTextView, EditText mEditText)
+        {
+            mTextView.Text = "Poprawna odpowiedü:";
+            mEditText.Text = Convert.ToString(expression.correctanswer);
+            flag = true;
         }
     }
 }

@@ -14,6 +14,7 @@ namespace Functionalities
 {
     class BasicMathsStructures
     { 
+
       /// <summary>
       /// Przechowuje wyrazenie zlozone z 2 liczb
       /// </summary>
@@ -21,6 +22,7 @@ namespace Functionalities
         {
             public int a;
             public int b;
+            public int correctanswer;
             public string displayvalue;
         }
     }
