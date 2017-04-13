@@ -64,6 +64,25 @@ namespace Functionalities
 
         public delegate ValueInt2 DelGenerate();
 
+
+        /// <summary>
+        /// Generate Addition Expression
+        /// </summary>
+        /// <returns></returns>
+        public static ValueInt2 GenerateAddition()
+        {
+            var ret = new ValueInt2();
+            ret.a = RandValue.Rand(1, 20);
+            ret.b = RandValue.Rand(1, 20);
+            ret.correctanswer = ret.a + ret.b;
+            ret.displayvalue = Convert.ToString(ret.a) + " + " + Convert.ToString(ret.b) + " =";
+            return ret;
+        }
+
+        /// <summary>
+        /// Generate Subtraction Expression 
+        /// </summary>
+        /// <returns></returns>
         public static ValueInt2 GenerateSubtraction()
         {
             var ret = new ValueInt2();
