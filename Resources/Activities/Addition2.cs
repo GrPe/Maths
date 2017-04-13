@@ -50,14 +50,14 @@ namespace Maths.Resources.Activities
                 {
                     if (mEditText.Text != "")
                     {
-                        if (BasicMathsFunctions.VerifyAddition(mEditText.Text,expression))
+                        if (IntegerFunctions.VerifyAddition(mEditText.Text,expression))
                         {
                             mTextView.Text = "Dobrze!";
                             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
                             mbutton.Enabled = true;
                             flag = true;
                         }
-                        if(!BasicMathsFunctions.VerifyAddition(mEditText.Text,expression))
+                        if(!IntegerFunctions.VerifyAddition(mEditText.Text,expression))
                         {
                             mTextView.Text = "èle!";
                             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue

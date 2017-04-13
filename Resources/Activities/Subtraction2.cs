@@ -50,14 +50,14 @@ namespace Maths.Resources.Activities
                 {
                     if (mEditText.Text != "")
                     {
-                        if (BasicMathsFunctions.VerifySubtraction(mEditText.Text, expression))
+                        if (IntegerFunctions.VerifySubtraction(mEditText.Text, expression))
                         {
                             mTextView.Text = "Dobrze!";
                             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
                             mbutton.Enabled = true;
                             flag = true;
                         }
-                        if (!BasicMathsFunctions.VerifySubtraction(mEditText.Text, expression))
+                        if (!IntegerFunctions.VerifySubtraction(mEditText.Text, expression))
                         {
                             mTextView.Text = "èle!";
                             mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
@@ -86,7 +86,7 @@ namespace Maths.Resources.Activities
         private void FalseAnswer(TextView mTextView, EditText mEditText)
         {
             mTextView.Text = "Poprawna odpowiedü:";
-            mEditText.Text = Convert.ToString(expression.a * expression.b);
+            mEditText.Text = Convert.ToString(expression.a - expression.b);
             flag = true;
         }
     }
