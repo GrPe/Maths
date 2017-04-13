@@ -2,7 +2,7 @@ package md5230d9ba631e4ee85b4463801f1dec6e9;
 
 
 public class Addition2
-	extends android.app.Activity
+	extends md5bf7134fd40824433040c991a616c493c.IntegerActivity
 	implements
 		mono.android.IGCUserPeer
 {

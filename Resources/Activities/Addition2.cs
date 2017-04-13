@@ -18,4 +18,5 @@ namespace Maths.Resources.Activities
         {
             base.OnCreate(savedInstanceState);
         }
+    }
 }

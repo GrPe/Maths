@@ -92,5 +92,37 @@ namespace Functionalities
             ret.displayvalue = Convert.ToString(ret.a) + " - " + Convert.ToString(ret.b) + " =";
             return ret;
         }
+
+        /// <summary>
+        /// Generate Multiplication Expression
+        /// </summary>
+        /// <returns></returns>
+        public static ValueInt2 GenerateMultiplication()
+        {
+            var ret = new ValueInt2();
+            ret.a = RandValue.Rand(1, 10);
+            ret.b = RandValue.Rand(1, 10);
+            ret.correctanswer = ret.a * ret.b;
+            ret.displayvalue = Convert.ToString(ret.a) + " * " + Convert.ToString(ret.b) + " =";
+            return ret;
+        }
+
+        /// <summary>
+        /// Generate Division Expression
+        /// </summary>
+        /// <returns></returns>
+        public static ValueInt2 GenerateDivision()
+        {
+            var ret = new ValueInt2();
+            ret.a = RandValue.Rand(2, 100);
+            while (true)
+            {
+                ret.b = RandValue.Rand(2, 100);
+                if (ret.a % ret.b == 0) break;
+            }
+            ret.correctanswer = ret.a / ret.b;
+            ret.displayvalue = Convert.ToString(ret.a) + " \u00f7 " + Convert.ToString(ret.b) + " =";
+            return ret;
+        }
     }
 }
