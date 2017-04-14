@@ -17,22 +17,46 @@ namespace Functionalities
     {
         public delegate bool DelCompare(string value, ValueDouble2 exp);
 
+        /// <summary>
+        /// Verify correctness of Addition
+        /// </summary>
+        /// <param name="value">value from user</param>
+        /// <param name="exp">real value</param>
+        /// <returns></returns>
         public static bool VerifyAddition(string value, ValueDouble2 exp)
         {
             return (exp.a + exp.b == Convert.ToDouble(value));
         }
 
+        /// <summary>
+        /// Verify correctness of Subtraction
+        /// </summary>
+        /// <param name="value">value from user</param>
+        /// <param name="exp">real value</param>
+        /// <returns></returns>
         public static bool VerifySubtraction(string value, ValueDouble2 exp)
         {
             return (exp.a - exp.b == Convert.ToDouble(value));
         }
 
+        /// <summary>
+        /// Verify correctness of Multiplication
+        /// </summary>
+        /// <param name="value">value from user</param>
+        /// <param name="exp">real value</param>
+        /// <returns></returns>
         public static bool VerifyMultiplication(string value, ValueDouble2 exp)
         {
             return (exp.a * exp.b == Convert.ToDouble(value));
         }
 
-        public static bool VerifyDivison(string value, ValueDouble2 exp)
+        /// <summary>
+        /// Verify correctness of Division
+        /// </summary>
+        /// <param name="value">value from user</param>
+        /// <param name="exp">real value</param>
+        /// <returns></returns>
+        public static bool VerifyDivision(string value, ValueDouble2 exp)
         {
             double tmp;
             try
@@ -47,5 +71,4 @@ namespace Functionalities
         }
     }
 
-}
 }
