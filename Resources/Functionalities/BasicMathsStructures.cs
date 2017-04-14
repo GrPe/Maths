@@ -25,5 +25,16 @@ namespace Functionalities
             public int correctanswer;
             public string displayvalue;
         }
+
+        /// <summary>
+        /// Przechowuje wyrazenie zlozone z 2 liczby double
+        /// </summary>
+        public struct ValueDouble2
+        {
+            public double a;
+            public double b;
+            public double correctanswer;
+            public string displayvalue;
+        }
     }
 }
