@@ -69,6 +69,25 @@ namespace Functionalities
             }
             return value == Convert.ToString(tmp);
         }
+
+
+        public delegate ValueDouble2 DelGenerate();
+
+
+        /// <summary>
+        /// Generate Addition Expression (Floating Points value)
+        /// </summary>
+        /// <returns></returns>
+        public static ValueDouble2 GenerateAddition()
+        {
+            ValueDouble2 ret;
+            ret.a = RandValue.RandDouble(0.1, 9.5);
+            ret.b = RandValue.RandDouble(0.1, 9.5);
+            ret.correctanswer = ret.a + ret.b;
+            ret.displayvalue = Convert.ToString(ret.a) + " + " + Convert.ToString(ret.b) + " =";
+            return ret;
+        }
+
     }
 
 }

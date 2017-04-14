@@ -5,6 +5,7 @@ namespace Functionalities
     public static class RandValue
     {
         private static Random NValue = new Random();
+
         /// <summary>
         /// Return Random value from the specified range
         /// </summary>
