@@ -16,7 +16,7 @@ namespace Maths.Resources.BaseActivities
     [Activity(Label = "IntegerActivity")]
     public class IntegerActivity : Activity
     {
-        BasicMathsStructures.ValueInt2 expression = new BasicMathsStructures.ValueInt2();
+        MathsStructures.ValueInt2 expression = new MathsStructures.ValueInt2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
 
         internal IntegerFunctions.DelCompare delcom;

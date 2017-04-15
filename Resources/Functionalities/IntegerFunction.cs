@@ -1,5 +1,5 @@
 using System;
-using static Functionalities.BasicMathsStructures;
+using static Functionalities.MathsStructures;
 
 namespace Functionalities
 {

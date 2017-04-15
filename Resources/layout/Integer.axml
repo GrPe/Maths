@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+    <Button
+        android:text="Dodawanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonIntegerAddiction2"
+        android:background="#00aced"
+        android:layout_margin="5dip" />
+    <Button
+        android:text="Odejmowanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonIntegerSubtraction2"
+        android:background="#00aced"
+        android:layout_margin="5dip" />
+    <Button
+        android:text="Mnożenie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonIntegerMultiplication2"
+        android:background="#00aced"
+        android:layout_margin="5dip" />
+    <Button
+        android:text="Dzielenie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonIntegerDivision2"
+        android:background="#00aced"
+        android:layout_margin="5dip" />
+    <Button
+        android:text="MIX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonIntegerCombinedBasic2"
+        android:background="#00aced"
+        android:layout_margin="5dip" />
+</LinearLayout>

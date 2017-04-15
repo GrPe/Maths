@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Functionalities
 {
-    class BasicMathsStructures
+    class MathsStructures
     { 
 
       /// <summary>

@@ -56,6 +56,7 @@
     <Compile Include="Resources\Activities\Division2.cs" />
     <Compile Include="Resources\Activities\Settings_BasicMaths.cs" />
     <Compile Include="Resources\BaseActivities\IntegerActivity.cs" />
+    <Compile Include="Resources\Functionalities\FloatingPointNumberFunction.cs" />
     <Compile Include="Resources\Functionalities\IntegerFunction.cs" />
     <Compile Include="Resources\Activities\Multiplication2.cs" />
     <Compile Include="Resources\Functionalities\BasicMathsStructures.cs" />
