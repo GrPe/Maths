@@ -40,5 +40,6 @@ D:\Documents\Projekty\2017\Maths\obj\Debug\android\assets\System.Runtime.Seriali
 D:\Documents\Projekty\2017\Maths\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 D:\Documents\Projekty\2017\Maths\obj\Debug\android\assets\System.Xml.dll.mdb
 D:\Documents\Projekty\2017\Maths\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\Documents\Projekty\2017\Maths\obj\Debug\res\layout\integer.xml
 D:\Documents\Projekty\2017\Maths\obj\Debug\Maths.dll.mdb
 D:\Documents\Projekty\2017\Maths\bin\Debug\Maths.dll.mdb

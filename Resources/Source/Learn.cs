@@ -18,6 +18,7 @@ namespace Maths.Resources.Source
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.Learn);
 
             #region button1 - Integer
             Button button1 = FindViewById<Button>(Resource.Id.buttonIntegerLearn);

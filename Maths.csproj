@@ -52,19 +52,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Resources\Activities\Addition2.cs" />
-    <Compile Include="Resources\Activities\Division2.cs" />
-    <Compile Include="Resources\Activities\Settings_BasicMaths.cs" />
+    <Compile Include="Resources\ActivitiesInteger\Addition2.cs" />
+    <Compile Include="Resources\ActivitiesInteger\Division2.cs" />
+    <Compile Include="Resources\ActivitiesInteger\Settings_BasicMaths.cs" />
     <Compile Include="Resources\BaseActivities\IntegerActivity.cs" />
     <Compile Include="Resources\Functionalities\FloatingPointNumberFunction.cs" />
     <Compile Include="Resources\Functionalities\IntegerFunction.cs" />
-    <Compile Include="Resources\Activities\Multiplication2.cs" />
-    <Compile Include="Resources\Functionalities\BasicMathsStructures.cs" />
+    <Compile Include="Resources\ActivitiesInteger\Multiplication2.cs" />
+    <Compile Include="Resources\Functionalities\MathsStructures.cs" />
     <Compile Include="Resources\Functionalities\RandValue.cs" />
-    <Compile Include="Resources\Activities\Subtraction2.cs" />
+    <Compile Include="Resources\ActivitiesInteger\Subtraction2.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Source\AboutInfo.cs" />
+    <Compile Include="Resources\ActivitiesLearn\Integer.cs" />
     <Compile Include="Resources\Source\Learn.cs" />
     <Compile Include="Resources\Source\Stats.cs" />
   </ItemGroup>
@@ -74,7 +75,7 @@
     <AndroidResource Include="Resources\layout\Aboutinfo.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Learn.axml">
+    <AndroidResource Include="Resources\layout\Integer.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Stats.axml">
@@ -84,6 +85,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Settings_CombinedMaths.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Learn.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

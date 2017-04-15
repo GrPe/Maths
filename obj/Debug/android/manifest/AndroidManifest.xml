@@ -12,6 +12,7 @@
       </intent-filter>
     </activity>
     <activity android:label="AboutInfo" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo" />
+    <activity android:label="Integer" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Integer" />
     <activity android:label="Learn" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Learn" />
     <activity android:label="Stats" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Stats" />
     <activity android:label="IntegerActivity" android:name="md5bf7134fd40824433040c991a616c493c.IntegerActivity" />
