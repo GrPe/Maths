@@ -22,7 +22,7 @@ public final class R {
         public static final int X_tv2=0x7f05000f;
         public static final int X_tv3=0x7f050011;
         public static final int X_tv4=0x7f050013;
-        public static final int button2=0x7f050008;
+        public static final int buttonFloatingPointLearn=0x7f050008;
         public static final int buttonIntegerAddiction2=0x7f050002;
         public static final int buttonIntegerCombinedBasic2=0x7f050006;
         public static final int buttonIntegerDivision2=0x7f050005;

@@ -85,7 +85,7 @@ namespace Maths
 			public const int X_tv4 = 2131034131;
 			
 			// aapt resource value: 0x7f050008
-			public const int button2 = 2131034120;
+			public const int buttonFloatingPointLearn = 2131034120;
 			
 			// aapt resource value: 0x7f050002
 			public const int buttonIntegerAddiction2 = 2131034114;

@@ -1,18 +1,25 @@
-using Maths.Resources.ActivitiesInteger;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 using Android.App;
+using Android.Content;
 using Android.OS;
+using Android.Runtime;
+using Android.Views;
 using Android.Widget;
 
-namespace Maths.Resources.Source
+namespace ActivitiesLearn
 {
-    [Activity(Label = "Integer")]
-    public class Integer : Activity
+    [Activity(Label = "FloatingPoint")]
+    public class FloatingPoint : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-             SetContentView(Resource.Layout.Integer);
+            SetContentView(Resource.Layout.Integer);
             #region button1 - Addition2
             Button button1 = FindViewById<Button>(Resource.Id.buttonIntegerAddiction2);
             button1.Click += delegate
@@ -48,9 +55,9 @@ namespace Maths.Resources.Source
             #region button5 - MIX
             Button button5 = FindViewById<Button>(Resource.Id.buttonIntegerCombinedBasic2);
             button5.Click += delegate
-             {
-                 StartActivity(typeof(Settings_BasicMaths));
-             };
+            {
+                StartActivity(typeof(Settings_BasicMaths));
+            };
 
             #endregion
         }

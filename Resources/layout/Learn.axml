@@ -12,10 +12,10 @@
         android:background="#00aced"
         android:layout_margin="5dip" />
     <Button
-        android:text="Button"
+        android:text="Ułamki dziesiętne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
+        android:id="@+id/buttonFloatingPointLearn"
         android:background="#00aced"
         android:layout_margin="5dip" />
 </LinearLayout>

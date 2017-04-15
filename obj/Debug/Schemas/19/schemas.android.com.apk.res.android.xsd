@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v19</xs:documentation>
-    <xs:documentation>2017-04-15 21:35:08</xs:documentation>
+    <xs:documentation>2017-04-15 21:58:41</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -9886,8 +9886,8 @@
             <xs:enumeration value="@+id/imageView1" />
             <xs:enumeration value="@id/button_S_CM_Start" />
             <xs:enumeration value="@id/button_View_BaseMaths_Next" />
-            <xs:enumeration value="@id/button2" />
             <xs:enumeration value="@id/buttonexit" />
+            <xs:enumeration value="@id/buttonFloatingPointLearn" />
             <xs:enumeration value="@id/buttoninfo" />
             <xs:enumeration value="@id/buttonIntegerAddiction2" />
             <xs:enumeration value="@id/buttonIntegerCombinedBasic2" />

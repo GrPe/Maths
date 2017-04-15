@@ -3,7 +3,7 @@ using Android.OS;
 using Functionalities;
 using Maths.Resources.BaseActivities;
 
-namespace Maths.Resources.Activities
+namespace Maths.Resources.ActivitiesInteger
 {
     [Activity(Label = "Addition2")]
     public class Addition2 : IntegerActivity

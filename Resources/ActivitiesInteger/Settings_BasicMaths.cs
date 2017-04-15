@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace Maths.Resources.Activities
+namespace Maths.Resources.ActivitiesInteger
 {
     [Activity(Label = "Settings_BasicMaths")]
     public class Settings_BasicMaths : Activity

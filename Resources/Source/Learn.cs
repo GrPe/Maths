@@ -28,6 +28,14 @@ namespace Maths.Resources.Source
              };
             #endregion
 
+            #region button2 - Floating Point
+            Button button2 = FindViewById<Button>(Resource.Id.buttonFloatingPointLearn);
+            button2.Click += delegate
+            {
+                StartActivity(typeof()); //asdfghjk
+            };
+            #endregion
+
         }
     }
 }
