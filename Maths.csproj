@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\ActivitiesFloatingPoint\Addition2.cs" />
+    <Compile Include="Resources\ActivitiesFloatingPoint\Multiplication2.cs" />
     <Compile Include="Resources\ActivitiesFloatingPoint\Subtraction2.cs" />
     <Compile Include="Resources\ActivitiesInteger\Addition2.cs" />
     <Compile Include="Resources\ActivitiesInteger\Division2.cs" />

@@ -24,6 +24,7 @@
     <activity android:label="Multiplication2" android:name="md5b128777984d8d2a547ee5a37af0b7a6f.Multiplication2" />
     <activity android:label="Subtraction2" android:name="md5b128777984d8d2a547ee5a37af0b7a6f.Subtraction2" />
     <activity android:label="Addition2" android:name="md580945cb4eaef10af91e2636482dadbf1.Addition2" />
+    <activity android:label="Multiplication2" android:name="md580945cb4eaef10af91e2636482dadbf1.Multiplication2" />
     <activity android:label="Subtraction2" android:name="md580945cb4eaef10af91e2636482dadbf1.Subtraction2" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Maths.Maths.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

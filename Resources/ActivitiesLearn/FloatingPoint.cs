@@ -1,13 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Maths.Resources.ActivitiesFloatingPoint;
 
@@ -19,8 +11,8 @@ namespace Maths.Resources.ActivitiesLearn
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.Integer);
+
             #region button1 - Addition2
             Button button1 = FindViewById<Button>(Resource.Id.buttonIntegerAddiction2);
             button1.Click += delegate
@@ -37,13 +29,13 @@ namespace Maths.Resources.ActivitiesLearn
             };
             #endregion
 
-            //#region button3 - Multiplication2
-            //Button button3 = FindViewById<Button>(Resource.Id.buttonIntegerMultiplication2);
-            //button3.Click += delegate
-            //{
-            //    StartActivity(typeof(Multiplication2));
-            //};
-            //#endregion
+            #region button3 - Multiplication2
+            Button button3 = FindViewById<Button>(Resource.Id.buttonIntegerMultiplication2);
+            button3.Click += delegate
+            {
+                StartActivity(typeof(Multiplication2));
+            };
+            #endregion
 
             //#region button4 - Division2
             //Button button4 = FindViewById<Button>(Resource.Id.buttonIntegerDivision2);

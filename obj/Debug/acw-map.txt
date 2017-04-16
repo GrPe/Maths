@@ -54,6 +54,10 @@ Maths.Resources.ActivitiesFloatingPoint.Addition2, Maths;md580945cb4eaef10af91e2
 Maths.Resources.ActivitiesFloatingPoint.Addition2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md580945cb4eaef10af91e2636482dadbf1.Addition2
 Maths.Resources.ActivitiesFloatingPoint.Addition2;md580945cb4eaef10af91e2636482dadbf1.Addition2
 maths.resources.activitiesfloatingpoint.Addition2;md580945cb4eaef10af91e2636482dadbf1.Addition2
+Maths.Resources.ActivitiesFloatingPoint.Multiplication2, Maths;md580945cb4eaef10af91e2636482dadbf1.Multiplication2
+Maths.Resources.ActivitiesFloatingPoint.Multiplication2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md580945cb4eaef10af91e2636482dadbf1.Multiplication2
+Maths.Resources.ActivitiesFloatingPoint.Multiplication2;md580945cb4eaef10af91e2636482dadbf1.Multiplication2
+maths.resources.activitiesfloatingpoint.Multiplication2;md580945cb4eaef10af91e2636482dadbf1.Multiplication2
 Maths.Resources.ActivitiesFloatingPoint.Subtraction2, Maths;md580945cb4eaef10af91e2636482dadbf1.Subtraction2
 Maths.Resources.ActivitiesFloatingPoint.Subtraction2, Maths, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md580945cb4eaef10af91e2636482dadbf1.Subtraction2
 Maths.Resources.ActivitiesFloatingPoint.Subtraction2;md580945cb4eaef10af91e2636482dadbf1.Subtraction2

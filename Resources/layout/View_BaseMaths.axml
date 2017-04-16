@@ -18,7 +18,7 @@
         p1:layout_centerHorizontal="true" />
     <EditText
         p1:id="@+id/edittext_View_BaseMaths"
-        p1:inputType="number"
+        p1:inputType="numberDecimal"
         p1:text=""
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"

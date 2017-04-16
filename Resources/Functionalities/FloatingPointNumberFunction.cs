@@ -101,6 +101,21 @@ namespace Functionalities
             ret.displayvalue = Convert.ToString(ret.a) + " - " + Convert.ToString(ret.b) + " =";
             return ret;
         }
+
+        /// <summary>
+        /// Generate Multiplication Expression (Floating Points value)
+        /// </summary>
+        /// <returns></returns>
+        public static ValueDouble2 GenerateMultiplication()
+        {
+            ValueDouble2 ret;
+            ret.a = RandValue.RandDouble(1, 10, 10);
+            ret.b = RandValue.RandDouble(1, 10, 10);
+            ret.correctanswer = ret.a * ret.b;
+            ret.displayvalue = Convert.ToString(ret.a) + " * " + Convert.ToString(ret.b) + " =";
+            return ret;
+        }
+
     }
 
 }
