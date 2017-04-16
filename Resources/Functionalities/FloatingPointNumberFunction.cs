@@ -1,14 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using static Functionalities.MathsStructures;
 
 namespace Functionalities
@@ -25,7 +15,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool VerifyAddition(string value, ValueDouble2 exp)
         {
-            return (exp.a + exp.b == Convert.ToDouble(value));
+            return (Convert.ToString(exp.a + exp.b) == value);
         }
 
         /// <summary>
@@ -36,7 +26,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool VerifySubtraction(string value, ValueDouble2 exp)
         {
-            return (exp.a - exp.b == Convert.ToDouble(value));
+            return Convert.ToString(exp.a - exp.b) == value;
         }
 
         /// <summary>
@@ -47,7 +37,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool VerifyMultiplication(string value, ValueDouble2 exp)
         {
-            return (exp.a * exp.b == Convert.ToDouble(value));
+            return Convert.ToString(exp.a * exp.b) == value;
         }
 
         /// <summary>
