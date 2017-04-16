@@ -52,9 +52,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\ActivitiesFloatingPoint\Addition2.cs" />
+    <Compile Include="Resources\ActivitiesFloatingPoint\Subtraction2.cs" />
     <Compile Include="Resources\ActivitiesInteger\Addition2.cs" />
     <Compile Include="Resources\ActivitiesInteger\Division2.cs" />
     <Compile Include="Resources\ActivitiesInteger\Settings_BasicMaths.cs" />
+    <Compile Include="Resources\ActivitiesLearn\FloatingPoint.cs" />
+    <Compile Include="Resources\BaseActivities\FloatingPointActivity.cs" />
     <Compile Include="Resources\BaseActivities\IntegerActivity.cs" />
     <Compile Include="Resources\Functionalities\FloatingPointNumberFunction.cs" />
     <Compile Include="Resources\Functionalities\IntegerFunction.cs" />

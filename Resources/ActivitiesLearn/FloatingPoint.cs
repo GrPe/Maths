@@ -9,8 +9,9 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Maths.Resources.ActivitiesFloatingPoint;
 
-namespace ActivitiesLearn
+namespace Maths.Resources.ActivitiesLearn
 {
     [Activity(Label = "FloatingPoint")]
     public class FloatingPoint : Activity
@@ -36,30 +37,30 @@ namespace ActivitiesLearn
             };
             #endregion
 
-            #region button3 - Multiplication2
-            Button button3 = FindViewById<Button>(Resource.Id.buttonIntegerMultiplication2);
-            button3.Click += delegate
-            {
-                StartActivity(typeof(Multiplication2));
-            };
-            #endregion
+            //#region button3 - Multiplication2
+            //Button button3 = FindViewById<Button>(Resource.Id.buttonIntegerMultiplication2);
+            //button3.Click += delegate
+            //{
+            //    StartActivity(typeof(Multiplication2));
+            //};
+            //#endregion
 
-            #region button4 - Division2
-            Button button4 = FindViewById<Button>(Resource.Id.buttonIntegerDivision2);
-            button4.Click += delegate
-            {
-                StartActivity(typeof(Division2));
-            };
-            #endregion
+            //#region button4 - Division2
+            //Button button4 = FindViewById<Button>(Resource.Id.buttonIntegerDivision2);
+            //button4.Click += delegate
+            //{
+            //    StartActivity(typeof(Division2));
+            //};
+            //#endregion
 
-            #region button5 - MIX
-            Button button5 = FindViewById<Button>(Resource.Id.buttonIntegerCombinedBasic2);
-            button5.Click += delegate
-            {
-                StartActivity(typeof(Settings_BasicMaths));
-            };
+            //#region button5 - MIX
+            //Button button5 = FindViewById<Button>(Resource.Id.buttonIntegerCombinedBasic2);
+            //button5.Click += delegate
+            //{
+            //    StartActivity(typeof(Settings_BasicMaths));
+            //};
 
-            #endregion
+            //#endregion
         }
     }
 }

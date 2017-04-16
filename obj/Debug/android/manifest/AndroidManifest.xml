@@ -12,15 +12,19 @@
       </intent-filter>
     </activity>
     <activity android:label="AboutInfo" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Aboutinfo" />
-    <activity android:label="Integer" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Integer" />
     <activity android:label="Learn" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Learn" />
     <activity android:label="Stats" android:name="md593e2e1c2f3bdedaaef639468a62eb3eb.Stats" />
+    <activity android:label="FloatingPointActivity" android:name="md5bf7134fd40824433040c991a616c493c.FloatingPointActivity" />
     <activity android:label="IntegerActivity" android:name="md5bf7134fd40824433040c991a616c493c.IntegerActivity" />
-    <activity android:label="Addition2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Addition2" />
-    <activity android:label="Division2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Division2" />
-    <activity android:label="Settings_BasicMaths" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Settings_BasicMaths" />
-    <activity android:label="Multiplication2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Multiplication2" />
-    <activity android:label="Subtraction2" android:name="md5230d9ba631e4ee85b4463801f1dec6e9.Subtraction2" />
+    <activity android:label="FloatingPoint" android:name="md5cea450443128b849d8110f77e8eaffe4.FloatingPoint" />
+    <activity android:label="Integer" android:name="md5cea450443128b849d8110f77e8eaffe4.Integer" />
+    <activity android:label="Addition2" android:name="md5b128777984d8d2a547ee5a37af0b7a6f.Addition2" />
+    <activity android:label="Division2" android:name="md5b128777984d8d2a547ee5a37af0b7a6f.Division2" />
+    <activity android:label="Settings_BasicMaths" android:name="md5b128777984d8d2a547ee5a37af0b7a6f.Settings_BasicMaths" />
+    <activity android:label="Multiplication2" android:name="md5b128777984d8d2a547ee5a37af0b7a6f.Multiplication2" />
+    <activity android:label="Subtraction2" android:name="md5b128777984d8d2a547ee5a37af0b7a6f.Subtraction2" />
+    <activity android:label="Addition2" android:name="md580945cb4eaef10af91e2636482dadbf1.Addition2" />
+    <activity android:label="Subtraction2" android:name="md580945cb4eaef10af91e2636482dadbf1.Subtraction2" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Maths.Maths.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

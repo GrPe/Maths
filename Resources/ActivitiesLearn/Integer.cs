@@ -3,7 +3,7 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 
-namespace Maths.Resources.Source
+namespace Maths.Resources.ActivitiesLearn
 {
     [Activity(Label = "Integer")]
     public class Integer : Activity

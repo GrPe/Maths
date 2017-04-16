@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Maths.Resources.ActivitiesLearn;
 
 namespace Maths.Resources.Source
 {
@@ -32,7 +33,7 @@ namespace Maths.Resources.Source
             Button button2 = FindViewById<Button>(Resource.Id.buttonFloatingPointLearn);
             button2.Click += delegate
             {
-                StartActivity(typeof()); //asdfghjk
+                StartActivity(typeof(FloatingPoint));
             };
             #endregion
 
