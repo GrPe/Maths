@@ -58,7 +58,6 @@
     <Compile Include="Resources\ActivitiesInteger\Addition2.cs" />
     <Compile Include="Resources\ActivitiesInteger\Division2.cs" />
     <Compile Include="Resources\ActivitiesInteger\Mix.cs" />
-    <Compile Include="Resources\ActivitiesInteger\Settings_BasicMaths.cs" />
     <Compile Include="Resources\ActivitiesLearn\FloatingPoint.cs" />
     <Compile Include="Resources\BaseActivities\FloatingPointActivity.cs" />
     <Compile Include="Resources\BaseActivities\IntegerActivity.cs" />
@@ -88,9 +87,6 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\View_BaseMaths.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\Settings_CombinedMaths.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Learn.axml">
