@@ -45,11 +45,11 @@ namespace Maths.Resources.ActivitiesLearn
             };
             #endregion
 
-            #region button5 - MIX
+            #region button5 - Mix
             Button button5 = FindViewById<Button>(Resource.Id.buttonIntegerCombinedBasic2);
             button5.Click += delegate
              {
-                 StartActivity(typeof(Settings_BasicMaths));
+                 StartActivity(typeof(Mix));
              };
 
             #endregion

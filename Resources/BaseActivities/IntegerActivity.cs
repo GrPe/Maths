@@ -21,6 +21,7 @@ namespace Maths.Resources.BaseActivities
 
         internal IntegerFunctions.DelCompare delcom;
         internal IntegerFunctions.DelGenerate delgen;
+        internal bool ifmix = false; //czy aktywna jest activity mix
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,6 +37,7 @@ namespace Maths.Resources.BaseActivities
             Action(mTextView, mEditText, mbutton);
             mbutton.Click += delegate
             {
+                if (ifmix) Initialize(); //Na potrzeby activity mix
                 if (flag) Action(mTextView, mEditText, mbutton);
                 else FalseAnswer(mTextView, mEditText);
             };
