@@ -37,5 +37,20 @@ namespace Functionalities
         }
 
 
+        public delegate OridinaryFractions2 DelGenerate();
+
+        public static OridinaryFractions2 GenerateAddition()
+        {
+            OridinaryFractions2 ret;
+            ret.a.counter = UniversalFunctions.Rand(1, 9);
+            ret.a.denominator = UniversalFunctions.Rand(1, 9);
+            ret.b.counter = UniversalFunctions.Rand(1, 9);
+            ret.b.denominator = UniversalFunctions.Rand(1, 9);
+            ret._operator = "+";
+
+            return ret;
+        }
+
+
     }
 }
