@@ -81,8 +81,8 @@ namespace Maths
 			// aapt resource value: 0x7f050003
 			public const int buttonIntegerSubtraction2 = 2131034115;
 			
-			// aapt resource value: 0x7f05000e
-			public const int button_View_BaseMaths_Next = 2131034126;
+			// aapt resource value: 0x7f050017
+			public const int button_View_BaseMaths_Next = 2131034135;
 			
 			// aapt resource value: 0x7f050001
 			public const int buttonexit = 2131034113;
@@ -96,11 +96,38 @@ namespace Maths
 			// aapt resource value: 0x7f05000a
 			public const int buttonstatistics = 2131034122;
 			
-			// aapt resource value: 0x7f05000d
-			public const int edittext_View_BaseMaths = 2131034125;
+			// aapt resource value: 0x7f050016
+			public const int edittext_View_BaseMaths = 2131034134;
 			
 			// aapt resource value: 0x7f05000c
-			public const int textview_View_BaseMahs = 2131034124;
+			public const int relativeLayout1 = 2131034124;
+			
+			// aapt resource value: 0x7f05000d
+			public const int textView1 = 2131034125;
+			
+			// aapt resource value: 0x7f05000e
+			public const int textView2 = 2131034126;
+			
+			// aapt resource value: 0x7f05000f
+			public const int textView3 = 2131034127;
+			
+			// aapt resource value: 0x7f050010
+			public const int textView4 = 2131034128;
+			
+			// aapt resource value: 0x7f050011
+			public const int textView5 = 2131034129;
+			
+			// aapt resource value: 0x7f050012
+			public const int textView6 = 2131034130;
+			
+			// aapt resource value: 0x7f050013
+			public const int textView7 = 2131034131;
+			
+			// aapt resource value: 0x7f050014
+			public const int textView8 = 2131034132;
+			
+			// aapt resource value: 0x7f050015
+			public const int textview_View_BaseMahs = 2131034133;
 			
 			// aapt resource value: 0x7f050000
 			public const int textviewinfo = 2131034112;
@@ -131,10 +158,13 @@ namespace Maths
 			public const int Main = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Stats = 2130903044;
+			public const int OrdinaryFlactions = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int View_BaseMaths = 2130903045;
+			public const int Stats = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int View_BaseMaths = 2130903046;
 			
 			static Layout()
 			{
