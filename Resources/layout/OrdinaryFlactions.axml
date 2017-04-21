@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+    <TextView
+        p1:text="+"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView1"
+        p1:layout_centerHorizontal="true"
+        p1:layout_marginTop="50.0dp" />
+    <TextView
+        p1:text="----------"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toLeftOf="@id/textView1"
+        p1:id="@+id/textView2"
+        p1:layout_alignBottom="@id/textView1" />
+    <TextView
+        p1:text="Text"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_above="@id/textView2"
+        p1:id="@+id/textView3"
+        p1:layout_alignRight="@id/textView2" />
+    <TextView
+        p1:text="Text"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toLeftOf="@id/textView2"
+        p1:id="@+id/textView4"
+        p1:layout_below="@id/textView2"
+        p1:layout_alignRight="@id/textView2" />
+    <TextView
+        p1:text="----------"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/textView1"
+        p1:id="@+id/textView5"
+        p1:layout_alignBottom="@id/textView1" />
+    <TextView
+        p1:text="Text"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textView5"
+        p1:id="@+id/textView6"
+        p1:layout_alignLeft="@id/textView5" />
+    <TextView
+        p1:text="Text"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_above="@id/textView5"
+        p1:id="@+id/textView7"
+        p1:layout_alignLeft="@id/textView5" />
+    <TextView
+        p1:text="="
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/textView5"
+        p1:id="@+id/textView8"
+        p1:layout_above="@id/textView6" />
+</RelativeLayout>
