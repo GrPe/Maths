@@ -71,8 +71,8 @@ namespace Functionalities
         public static ValueDouble2 GenerateAddition()
         {
             ValueDouble2 ret;
-            ret.a = RandValue.RandDouble(0.1, 9.5);
-            ret.b = RandValue.RandDouble(0.1, 9.5);
+            ret.a = UniversalFunctions.RandDouble(0.1, 9.5);
+            ret.b = UniversalFunctions.RandDouble(0.1, 9.5);
             ret.correctanswer = ret.a + ret.b;
             ret.displayvalue = Convert.ToString(ret.a) + " + " + Convert.ToString(ret.b) + " =";
             return ret;
@@ -85,8 +85,8 @@ namespace Functionalities
         public static ValueDouble2 GenerateSubtraction()
         {
             ValueDouble2 ret;
-            ret.a = RandValue.RandDouble(1, 9.5);
-            ret.b = RandValue.RandDouble(1, ret.a);
+            ret.a = UniversalFunctions.RandDouble(1, 9.5);
+            ret.b = UniversalFunctions.RandDouble(1, ret.a);
             ret.correctanswer = ret.a - ret.b;
             ret.displayvalue = Convert.ToString(ret.a) + " - " + Convert.ToString(ret.b) + " =";
             return ret;
@@ -99,8 +99,8 @@ namespace Functionalities
         public static ValueDouble2 GenerateMultiplication()
         {
             ValueDouble2 ret;
-            ret.a = RandValue.RandDouble(1, 10, 10);
-            ret.b = RandValue.RandDouble(1, 10, 10);
+            ret.a = UniversalFunctions.RandDouble(1, 10, 10);
+            ret.b = UniversalFunctions.RandDouble(1, 10, 10);
             ret.correctanswer = ret.a * ret.b;
             ret.displayvalue = Convert.ToString(ret.a) + " * " + Convert.ToString(ret.b) + " =";
             return ret;

@@ -71,7 +71,6 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/OFFractionalMark2"
         p1:id="@+id/OFDenominator2"
-        p1:layout_alignLeft="@id/OFCounter2"
         p1:layout_alignBaseline="@id/OFDenominator1"
         p1:layout_toRightOf="@id/OFchar" />
     <TextView

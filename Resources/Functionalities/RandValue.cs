@@ -2,7 +2,7 @@
 
 namespace Functionalities
 {
-    public static class RandValue
+    public static class UniversalFunctions
     {
         private static Random NValue = new Random();
 
@@ -51,5 +51,8 @@ namespace Functionalities
             double ret = NValue.Next(imin, imax);
             return (ret / acc);
         }
+
+
+
     }
 }

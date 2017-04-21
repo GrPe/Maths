@@ -37,6 +37,14 @@ namespace Maths.Resources.Source
             };
             #endregion
 
+            #region button3 - Ordinary Fractions
+            Button button3 = FindViewById<Button>(Resource.Id.buttonOrdinaryFractions);
+            button3.Click += delegate
+            {
+                StartActivity(typeof(OrdinaryFractions));
+            };
+            #endregion
+
         }
     }
 }

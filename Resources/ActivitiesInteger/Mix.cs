@@ -10,7 +10,7 @@ namespace Maths.Resources.ActivitiesInteger
     {
         public override void Initialize()
         {
-            int tmp = RandValue.Rand(1, 100);
+            int tmp = UniversalFunctions.Rand(1, 100);
             tmp %= 4 +1;
             switch (tmp)
             {

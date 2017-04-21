@@ -60,29 +60,29 @@ namespace Maths
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f05000f
-			public const int OFCounter1 = 2131034127;
-			
-			// aapt resource value: 0x7f050013
-			public const int OFCounter2 = 2131034131;
-			
 			// aapt resource value: 0x7f050010
-			public const int OFDenominator1 = 2131034128;
-			
-			// aapt resource value: 0x7f050012
-			public const int OFDenominator2 = 2131034130;
+			public const int OFCounter1 = 2131034128;
 			
 			// aapt resource value: 0x7f050014
-			public const int OFEqual = 2131034132;
-			
-			// aapt resource value: 0x7f05000e
-			public const int OFFractionalMark1 = 2131034126;
+			public const int OFCounter2 = 2131034132;
 			
 			// aapt resource value: 0x7f050011
-			public const int OFFractionalMark2 = 2131034129;
+			public const int OFDenominator1 = 2131034129;
 			
-			// aapt resource value: 0x7f05000d
-			public const int OFchar = 2131034125;
+			// aapt resource value: 0x7f050013
+			public const int OFDenominator2 = 2131034131;
+			
+			// aapt resource value: 0x7f050015
+			public const int OFEqual = 2131034133;
+			
+			// aapt resource value: 0x7f05000f
+			public const int OFFractionalMark1 = 2131034127;
+			
+			// aapt resource value: 0x7f050012
+			public const int OFFractionalMark2 = 2131034130;
+			
+			// aapt resource value: 0x7f05000e
+			public const int OFchar = 2131034126;
 			
 			// aapt resource value: 0x7f050008
 			public const int buttonFloatingPointLearn = 2131034120;
@@ -105,29 +105,32 @@ namespace Maths
 			// aapt resource value: 0x7f050003
 			public const int buttonIntegerSubtraction2 = 2131034115;
 			
-			// aapt resource value: 0x7f050017
-			public const int button_View_BaseMaths_Next = 2131034135;
+			// aapt resource value: 0x7f050009
+			public const int buttonOrdinaryFractions = 2131034121;
+			
+			// aapt resource value: 0x7f050018
+			public const int button_View_BaseMaths_Next = 2131034136;
 			
 			// aapt resource value: 0x7f050001
 			public const int buttonexit = 2131034113;
 			
-			// aapt resource value: 0x7f05000b
-			public const int buttoninfo = 2131034123;
-			
-			// aapt resource value: 0x7f050009
-			public const int buttonlearn = 2131034121;
+			// aapt resource value: 0x7f05000c
+			public const int buttoninfo = 2131034124;
 			
 			// aapt resource value: 0x7f05000a
-			public const int buttonstatistics = 2131034122;
+			public const int buttonlearn = 2131034122;
+			
+			// aapt resource value: 0x7f05000b
+			public const int buttonstatistics = 2131034123;
+			
+			// aapt resource value: 0x7f050017
+			public const int edittext_View_BaseMaths = 2131034135;
+			
+			// aapt resource value: 0x7f05000d
+			public const int relativeLayout1 = 2131034125;
 			
 			// aapt resource value: 0x7f050016
-			public const int edittext_View_BaseMaths = 2131034134;
-			
-			// aapt resource value: 0x7f05000c
-			public const int relativeLayout1 = 2131034124;
-			
-			// aapt resource value: 0x7f050015
-			public const int textview_View_BaseMahs = 2131034133;
+			public const int textview_View_BaseMahs = 2131034134;
 			
 			// aapt resource value: 0x7f050000
 			public const int textviewinfo = 2131034112;
