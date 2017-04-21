@@ -60,6 +60,30 @@ namespace Maths
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f05000f
+			public const int OFCounter1 = 2131034127;
+			
+			// aapt resource value: 0x7f050013
+			public const int OFCounter2 = 2131034131;
+			
+			// aapt resource value: 0x7f050010
+			public const int OFDenominator1 = 2131034128;
+			
+			// aapt resource value: 0x7f050012
+			public const int OFDenominator2 = 2131034130;
+			
+			// aapt resource value: 0x7f050014
+			public const int OFEqual = 2131034132;
+			
+			// aapt resource value: 0x7f05000e
+			public const int OFFractionalMark1 = 2131034126;
+			
+			// aapt resource value: 0x7f050011
+			public const int OFFractionalMark2 = 2131034129;
+			
+			// aapt resource value: 0x7f05000d
+			public const int OFchar = 2131034125;
+			
 			// aapt resource value: 0x7f050008
 			public const int buttonFloatingPointLearn = 2131034120;
 			
@@ -101,30 +125,6 @@ namespace Maths
 			
 			// aapt resource value: 0x7f05000c
 			public const int relativeLayout1 = 2131034124;
-			
-			// aapt resource value: 0x7f05000d
-			public const int textView1 = 2131034125;
-			
-			// aapt resource value: 0x7f05000e
-			public const int textView2 = 2131034126;
-			
-			// aapt resource value: 0x7f05000f
-			public const int textView3 = 2131034127;
-			
-			// aapt resource value: 0x7f050010
-			public const int textView4 = 2131034128;
-			
-			// aapt resource value: 0x7f050011
-			public const int textView5 = 2131034129;
-			
-			// aapt resource value: 0x7f050012
-			public const int textView6 = 2131034130;
-			
-			// aapt resource value: 0x7f050013
-			public const int textView7 = 2131034131;
-			
-			// aapt resource value: 0x7f050014
-			public const int textView8 = 2131034132;
 			
 			// aapt resource value: 0x7f050015
 			public const int textview_View_BaseMahs = 2131034133;

@@ -36,5 +36,25 @@ namespace Functionalities
             public double correctanswer;
             public string displayvalue;
         }
+
+        /// <summary>
+        /// Ordinary Fraction Structure
+        /// </summary>
+        public struct SimpleOrdinaryFractions
+        {
+            public int counter;
+            public int denominator;
+        }
+
+
+        /// <summary>
+        /// Expression with 2 Ordinary Fractions
+        /// </summary>
+        public struct OridinaryFractions2
+        {
+            SimpleOrdinaryFractions a;
+            SimpleOrdinaryFractions b;
+            string _operator;
+        }
     }
 }
