@@ -52,7 +52,34 @@ namespace Functionalities
             return (ret / acc);
         }
 
+        /// <summary>
+        /// Return a GCD (greatest common divisor) (pl: NWD)
+        /// </summary>
+        /// <param name="a">first value</param>
+        /// <param name="b">second value</param>
+        /// <returns></returns>
+        private static int GCD(int a, int b)
+        {
+            while (b != 0)
+            {
+                int tmp = b;
+                b = a % b;
+                a = tmp;
+            }
+            return a;
+        }
 
+
+        /// <summary>
+        /// Return a LCM (least common multiple) (pl: NWW)
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        private static int LCM(int a, int b)
+        {
+            return (a * b) / GCD(a, b);
+        }
 
     }
 }
