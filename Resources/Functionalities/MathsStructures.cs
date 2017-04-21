@@ -52,9 +52,9 @@ namespace Functionalities
         /// </summary>
         public struct OridinaryFractions2
         {
-            SimpleOrdinaryFractions a;
-            SimpleOrdinaryFractions b;
-            string _operator;
+            public SimpleOrdinaryFractions a;
+            public SimpleOrdinaryFractions b;
+            public string _operator;
         }
     }
 }

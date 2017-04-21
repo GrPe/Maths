@@ -19,7 +19,8 @@ namespace Maths.Resources.ActivitiesLearn
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+
+
         }
     }
 }
