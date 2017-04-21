@@ -15,9 +15,15 @@ namespace Functionalities
 {
     static class OrdinaryFractionsFunction
     {
-
         public delegate bool DelCompare(string valuecounter, string valuedenominator, OridinaryFractions2 exp);
 
+        /// <summary>
+        /// Verify correctness of Addition Ordinary Fractions
+        /// </summary>
+        /// <param name="valuecounter">counter of result</param>
+        /// <param name="valuedenominator">denominator of result</param>
+        /// <param name="exp">original value</param>
+        /// <returns></returns>
         public static bool VerifyAddition(string valuecounter, string valuedenominator, OridinaryFractions2 exp)
         {
             SimpleOrdinaryFractions result;
@@ -31,7 +37,6 @@ namespace Functionalities
             result.counter /= UniversalFunctions.GCD(result.counter, result.denominator);
             result.denominator /= UniversalFunctions.GCD(result.counter, result.denominator);
 
-
             return (Convert.ToInt32(valuecounter) == result.counter &&
                 Convert.ToInt32(valuedenominator) == result.denominator);
         }
@@ -39,6 +44,11 @@ namespace Functionalities
 
         public delegate OridinaryFractions2 DelGenerate();
 
+
+        /// <summary>
+        /// Return an expression of two Ordinary Fractions
+        /// </summary>
+        /// <returns></returns>
         public static OridinaryFractions2 GenerateAddition()
         {
             OridinaryFractions2 ret;

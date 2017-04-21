@@ -58,7 +58,7 @@ namespace Functionalities
         /// <param name="a">first value</param>
         /// <param name="b">second value</param>
         /// <returns></returns>
-        private static int GCD(int a, int b)
+        public static int GCD(int a, int b)
         {
             while (b != 0)
             {
@@ -76,7 +76,7 @@ namespace Functionalities
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        private static int LCM(int a, int b)
+        public static int LCM(int a, int b)
         {
             return (a * b) / GCD(a, b);
         }
