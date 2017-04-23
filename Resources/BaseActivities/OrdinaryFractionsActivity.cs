@@ -27,16 +27,35 @@ namespace Maths.Resources.BaseActivities
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.OrdinaryFlactions);
-
             TextView mTextViewCounter1 = FindViewById<TextView>(Resource.Id.OFCounter1);
             TextView mTextViewDenominator1 = FindViewById<TextView>(Resource.Id.OFDenominator1);
             TextView mTextViewCounter2 = FindViewById<TextView>(Resource.Id.OFCounter2);
             TextView mTextViewDenominator2 = FindViewById<TextView>(Resource.Id.OFDenominator2);
             EditText mEditTextCounter3 = FindViewById<EditText>(Resource.Id.OFCounter3);
             EditText mEditTextDenominator3 = FindViewById<EditText>(Resource.Id.OFDenominator3);
+            TextView mTextViewChar = FindViewById<TextView>(Resource.Id.OFchar);
+            SetContentView(Resource.Layout.OrdinaryFlactions);
+
+            Button mButton = FindViewById<Button>(Resource.Id.OFButtonNext);
+            Inizalize();
+
+            //Action
+            mButton.Click += delegate
+             {
+                 if (ifmix) Inizalize(); //Na potrzeby activity mix
+                 //if Action
+             };
             
 
+        }
+
+        public virtual void Inizalize()
+        {
+            //IsEmpty
+        }
+
+        private void Action()
+        {
         }
     }
 }
