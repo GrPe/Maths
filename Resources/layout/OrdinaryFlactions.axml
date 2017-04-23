@@ -28,7 +28,8 @@
         p1:layout_alignBaseline="@id/OFchar"
         p1:layout_alignTop="@id/OFchar" />
     <TextView
-        p1:text="Text"
+        p1:text=""
+        p1:hint="..."
         p1:textColor="#000000"
         p1:textSize="50dip"
         p1:layout_width="wrap_content"
@@ -40,7 +41,8 @@
         p1:layout_alignRight="@id/OFFractionalMark1"
         p1:layout_marginTop="16.0dp" />
     <TextView
-        p1:text="Text"
+        p1:text=""
+        p1:hint="..."
         p1:textColor="#000000"
         p1:textSize="50dip"
         p1:layout_width="wrap_content"
@@ -64,7 +66,8 @@
         p1:layout_alignTop="@id/OFchar"
         p1:layout_marginLeft="6.0dp" />
     <TextView
-        p1:text="Text"
+        p1:text=""
+        p1:hint="..."
         p1:textColor="#000000"
         p1:textSize="50dip"
         p1:layout_width="wrap_content"
@@ -74,7 +77,8 @@
         p1:layout_alignBaseline="@id/OFDenominator1"
         p1:layout_toRightOf="@id/OFchar" />
     <TextView
-        p1:text="Text"
+        p1:text=""
+        p1:hint="..."
         p1:textColor="#000000"
         p1:textSize="50dip"
         p1:layout_width="wrap_content"
@@ -93,4 +97,43 @@
         p1:id="@+id/OFEqual"
         p1:layout_above="@id/OFDenominator2"
         p1:layout_marginLeft="3.0dp" />
+    <EditText
+        p1:textColor="#000000"
+        p1:textSize="50dip"
+        p1:inputType="number"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/OFDenominator1"
+        p1:id="@+id/OFCounter3"
+        p1:hint="..."
+        p1:layout_centerHorizontal="true" />
+    <TextView
+        p1:text="───"
+        p1:textColor="#000000"
+        p1:textSize="50dip"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/OFDenominator1"
+        p1:id="@+id/OFFractionalMark3"
+        p1:layout_centerHorizontal="true"
+        p1:layout_marginTop="70px" />
+    <EditText
+        p1:inputType="number"
+        p1:textColor="#000000"
+        p1:textSize="50dip"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/OFDenominator3"
+        p1:layout_centerHorizontal="true"
+        p1:hint="..."
+        p1:layout_alignTop="@id/OFFractionalMark3"
+        p1:layout_marginTop="30px" />
+    <Button
+        p1:text="Dalej"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/OFDenominator3"
+        p1:id="@+id/OFButtonNext"
+        p1:layout_centerHorizontal="true"
+        p1:background="#00aced" />
 </RelativeLayout>
