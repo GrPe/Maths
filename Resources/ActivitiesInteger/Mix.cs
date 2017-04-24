@@ -12,6 +12,7 @@ namespace Maths.Resources.ActivitiesInteger
         {
             int tmp = UniversalFunctions.Rand(1, 100);
             tmp %= 4 +1;
+            DivisionTable.Initialize();
             switch (tmp)
             {
                 case 1:
@@ -27,7 +28,7 @@ namespace Maths.Resources.ActivitiesInteger
                     delcom = IntegerFunctions.VerifyMultiplication;
                     break;
                 case 4:
-                    delgen = IntegerFunctions.GenerateDivision;
+                    delgen = DivisionTable.GetValue;
                     delcom = IntegerFunctions.VerifyDivision;
                     break;
                 default: 

@@ -24,15 +24,15 @@ namespace Maths.Resources.BaseActivities
 
             TextView mTextView = FindViewById<TextView>(Resource.Id.textview_View_BaseMahs);
             EditText mEditText = FindViewById<EditText>(Resource.Id.edittext_View_BaseMaths);
-            Button mbutton = FindViewById<Button>(Resource.Id.button_View_BaseMaths_Next);
+            Button mButton = FindViewById<Button>(Resource.Id.button_View_BaseMaths_Next);
             mEditText.InputType = Android.Text.InputTypes.ClassNumber;
             Initialize();
 
-            Action(mTextView, mEditText, mbutton);
-            mbutton.Click += delegate
+            Action(mTextView, mEditText, mButton);
+            mButton.Click += delegate
             {
                 if (ifmix) Initialize(); //Na potrzeby activity mix
-                if (flag) Action(mTextView, mEditText, mbutton);
+                if (flag) Action(mTextView, mEditText, mButton);
                 else FalseAnswer(mTextView, mEditText);
             };
         }

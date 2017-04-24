@@ -112,26 +112,26 @@ namespace Functionalities
         /// Generate Division Expression
         /// </summary>
         /// <returns></returns>
-        public static ValueInt2 GenerateDivision()
-        {
-            var ret = new ValueInt2();
-            ret.a = UniversalFunctions.Rand(2, 100);
-            while (true)
-            {
-                ret.b = UniversalFunctions.Rand(2, 100);
-                if (ret.a % ret.b == 0) break;
-            }
-            ret.correctanswer = ret.a / ret.b;
-            ret.displayvalue = Convert.ToString(ret.a) + " \u00f7 " + Convert.ToString(ret.b) + " =";
-            return ret;
-        }
+        //public static ValueInt2 GenerateDivision()
+        //{
+        //    var ret = new ValueInt2();
+        //    ret.a = UniversalFunctions.Rand(2, 100);
+        //    while (true)
+        //    {
+        //        ret.b = UniversalFunctions.Rand(2, 100);
+        //        if (ret.a % ret.b == 0) break;
+        //    }
+        //    ret.correctanswer = ret.a / ret.b;
+        //    ret.displayvalue = Convert.ToString(ret.a) + " \u00f7 " + Convert.ToString(ret.b) + " =";
+        //    return ret;
+        //}
     }
     static class DivisionTable
     {
         static List<ValueInt2> data = new List<ValueInt2>();
-        static int count = 0;
+        static int count = 0; //number of elements in list
 
-        public static void initialize()
+        public static void Initialize()
         {
             for(int i=2;i<=100;i++)
             {
@@ -152,6 +152,12 @@ namespace Functionalities
             }
         }
 
+        /// <summary>
+        /// Generate Division Expression 
+        /// !-- this function must be initialize before using
+        /// !-- initialize();
+        /// </summary>
+        /// <returns></returns>
         public static ValueInt2 GetValue()
         {
             return data[UniversalFunctions.Rand(1, count)];
