@@ -10,8 +10,10 @@ namespace Maths.Resources.ActivitiesInteger
     {
         public override void Initialize()
         {
+            DivisionTable.initialize();
             delcom = IntegerFunctions.VerifyDivision;
-            delgen = IntegerFunctions.GenerateDivision;
+            //delgen = IntegerFunctions.GenerateDivision;
+            delgen = DivisionTable.GetValue;
         }
 
         protected override void OnCreate(Bundle savedInstanceState)

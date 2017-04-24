@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using static Functionalities.MathsStructures;
 
 namespace Functionalities
@@ -124,5 +125,37 @@ namespace Functionalities
             ret.displayvalue = Convert.ToString(ret.a) + " \u00f7 " + Convert.ToString(ret.b) + " =";
             return ret;
         }
+    }
+    static class DivisionTable
+    {
+        static List<ValueInt2> data = new List<ValueInt2>();
+        static int count = 0;
+
+        public static void initialize()
+        {
+            for(int i=2;i<=100;i++)
+            {
+                for(int j=2;j<i;j++)
+                {
+                    if (i % j == 0)
+                    {
+                        data.Add(new ValueInt2
+                        {
+                            a = i,
+                            b = j,
+                            correctanswer = i / j,
+                            displayvalue = Convert.ToString(i) + " \u00f7 " + Convert.ToString(j) + " ="
+                        });
+                        count++;
+                    }
+                }
+            }
+        }
+
+        public static ValueInt2 GetValue()
+        {
+            return data[UniversalFunctions.Rand(1, count)];
+        }
+
     }
 }
