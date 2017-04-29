@@ -37,22 +37,22 @@ namespace Maths.Resources.ActivitiesLearn
             };
             #endregion
 
-            //#region button4 - Division2
-            //Button button4 = FindViewById<Button>(Resource.Id.buttonIntegerDivision2);
-            //button4.Click += delegate
-            //{
-            //    StartActivity(typeof(Division2));
-            //};
-            //#endregion
+            #region button4 - Division2
+            Button button4 = FindViewById<Button>(Resource.Id.buttonIntegerDivision2);
+            button4.Click += delegate
+            {
+                StartActivity(typeof(Division2));
+            };
+            #endregion
 
-            //#region button5 - MIX
-            //Button button5 = FindViewById<Button>(Resource.Id.buttonIntegerCombinedBasic2);
-            //button5.Click += delegate
-            //{
-            //    StartActivity(typeof(Settings_BasicMaths));
-            //};
+            #region button5 - MIX
+            Button button5 = FindViewById<Button>(Resource.Id.buttonIntegerCombinedBasic2);
+            button5.Click += delegate
+            {
+                StartActivity(typeof(Settings_BasicMaths));
+            };
 
-            //#endregion
+            #endregion
         }
     }
 }

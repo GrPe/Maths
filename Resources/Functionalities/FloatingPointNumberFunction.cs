@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using static Functionalities.MathsStructures;
 
 namespace Functionalities
@@ -104,6 +105,44 @@ namespace Functionalities
             ret.correctanswer = ret.a * ret.b;
             ret.displayvalue = Convert.ToString(ret.a) + " * " + Convert.ToString(ret.b) + " =";
             return ret;
+        }
+
+    }
+
+
+    static class DivisionTableOfFloatingPoints
+    {
+        static List<ValueDouble2> data = new List<ValueDouble2>();
+        static int count = 0; //number of elements in data
+
+        public static void Initialize()
+        {
+            for(decimal i=10;i<100;i++)
+            {
+                for(decimal j=10;j<1000;j++)
+                {
+                    if(Math.Abs(i/j-(int)i/(int)j)<0.01m && i/j != (int)i/(int)j)
+                    {
+                        count++;
+                        data.Add(new ValueDouble2
+                        {
+                            a = (double)i/10,
+                            b = (double)j/10,
+                            correctanswer = (double)i / (double)j,
+                            displayvalue = Convert.ToString(i/10) + " \u00f7 " + Convert.ToString(j/10) + " ="
+                        });
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Return expression of Floating Points
+        /// </summary>
+        /// <returns></returns>
+        public static ValueDouble2 GetValue()
+        {
+            return data[UniversalFunctions.Rand(1, count)];
         }
 
     }

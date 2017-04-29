@@ -107,25 +107,8 @@ namespace Functionalities
             ret.displayvalue = Convert.ToString(ret.a) + " * " + Convert.ToString(ret.b) + " =";
             return ret;
         }
-
-        /// <summary>
-        /// Generate Division Expression
-        /// </summary>
-        /// <returns></returns>
-        //public static ValueInt2 GenerateDivision()
-        //{
-        //    var ret = new ValueInt2();
-        //    ret.a = UniversalFunctions.Rand(2, 100);
-        //    while (true)
-        //    {
-        //        ret.b = UniversalFunctions.Rand(2, 100);
-        //        if (ret.a % ret.b == 0) break;
-        //    }
-        //    ret.correctanswer = ret.a / ret.b;
-        //    ret.displayvalue = Convert.ToString(ret.a) + " \u00f7 " + Convert.ToString(ret.b) + " =";
-        //    return ret;
-        //}
     }
+
     static class DivisionTable
     {
         static List<ValueInt2> data = new List<ValueInt2>();

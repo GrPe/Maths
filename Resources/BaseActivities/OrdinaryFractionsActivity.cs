@@ -33,7 +33,7 @@ namespace Maths.Resources.BaseActivities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.OrdinaryFlactions);
+            SetContentView(Resource.Layout.OrdinaryFractions);
 
             mTextViewCounter1 = FindViewById<TextView>(Resource.Id.OFCounter1);
             mTextViewDenominator1 = FindViewById<TextView>(Resource.Id.OFDenominator1);

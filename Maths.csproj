@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\ActivitiesFloatingPoint\Addition2.cs" />
+    <Compile Include="Resources\ActivitiesFloatingPoint\Division2.cs" />
     <Compile Include="Resources\ActivitiesFloatingPoint\Multiplication2.cs" />
     <Compile Include="Resources\ActivitiesFloatingPoint\Subtraction2.cs" />
     <Compile Include="Resources\ActivitiesInteger\Addition2.cs" />
@@ -96,7 +97,7 @@
     <AndroidResource Include="Resources\layout\Learn.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\OrdinaryFlactions.axml">
+    <AndroidResource Include="Resources\layout\OrdinaryFractions.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
