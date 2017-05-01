@@ -1,12 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Functionalities;
@@ -18,7 +12,7 @@ namespace Maths.Resources.BaseActivities
     {
         //initialize components
         MathsStructures.Percents2 expression = new MathsStructures.Percents2();
-        bool flag = true;
+        bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
         TextView mTextView;
         EditText mEditText;
         Button mButton;
@@ -26,7 +20,7 @@ namespace Maths.Resources.BaseActivities
         //initialize  variable to be used by derived class
         internal PercentFunction.DelCompare DelCom;
         internal PercentFunction.DelGenerate DelGen;
-        internal bool ifmix = true;
+        internal bool ifmix = true; //czy aktywna jest activity mix
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

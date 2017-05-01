@@ -1,14 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using static Functionalities.MathsStructures;
 
 namespace Functionalities
@@ -27,9 +17,7 @@ namespace Functionalities
         {
             return value == Convert.ToString(exp.Value * exp.Percent);
         }
-
-
-
+        
         public delegate Percents2 DelGenerate();
 
         /// <summary>

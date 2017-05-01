@@ -8,11 +8,11 @@ namespace Maths.Resources.ActivitiesInteger
     [Activity(Label = "Division2")]
     public class Division2 : IntegerActivity
     {
-        public override void Initialize()
+        protected override void Initialize()
         {
             DivisionTable.Initialize();
-            delcom = IntegerFunctions.VerifyDivision;
-            delgen = DivisionTable.GetValue;
+            DelCom = IntegerFunctions.VerifyDivision;
+            DelGen = DivisionTable.GetValue;
         }
 
         protected override void OnCreate(Bundle savedInstanceState)

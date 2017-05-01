@@ -17,7 +17,7 @@ namespace Maths.Resources.ActivitiesFloatingPoint
     [Activity(Label = "Multiplication2")]
     public class Multiplication2 : FloatingPointActivity
     {
-        public override void Initialize()
+        protected override void Initialize()
         {
             delcom = FloatingPointNumberFunction.VerifyMultiplication;
             delgen = FloatingPointNumberFunction.GenerateMultiplication;

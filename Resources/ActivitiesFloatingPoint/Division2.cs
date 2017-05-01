@@ -8,7 +8,7 @@ namespace Maths.Resources.ActivitiesFloatingPoint
     [Activity(Label = "Division2")]
     public class Division2 : FloatingPointActivity
     {
-        public override void Initialize()
+        protected override void Initialize()
         {
             DivisionTableOfFloatingPoints.Initialize();
             delgen = DivisionTableOfFloatingPoints.GetValue;

@@ -10,9 +10,14 @@ namespace Maths.Resources.BaseActivities
     [Activity(Label = "FloatingPointActivity")]
     public class FloatingPointActivity : Activity
     {
+        //initialize components
         MathsStructures.ValueDecimal2 expression = new MathsStructures.ValueDecimal2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
+        TextView mTextView;
+        EditText mEditText;
+        Button mButton;
 
+        //initialize  variable to be used by derived class
         internal FloatingPointNumberFunction.DelCompare delcom;
         internal FloatingPointNumberFunction.DelGenerate delgen;
         internal bool ifmix = false; //czy aktywna jest activity mix
@@ -22,29 +27,31 @@ namespace Maths.Resources.BaseActivities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.View_BaseMaths);
 
+            //set default components
             TextView mTextView = FindViewById<TextView>(Resource.Id.textview_View_BaseMahs);
             EditText mEditText = FindViewById<EditText>(Resource.Id.edittext_View_BaseMaths);
             Button mButton = FindViewById<Button>(Resource.Id.button_View_BaseMaths_Next);
             Initialize();
 
-            Action(mTextView, mEditText, mButton);
+            //Main activity
+            Action();
             mButton.Click += delegate
             {
                 if (ifmix) Initialize(); //Na potrzeby activity mix
-                if (flag) Action(mTextView, mEditText, mButton);
-                else FalseAnswer(mTextView, mEditText);
+                if (flag) Action();
+                else ShowCorrectAnswer();
             };
         }
 
-        public virtual void Initialize()
+        protected virtual void Initialize()
         {
             //IsEmpty
         }
 
-        private void Action(TextView mTextView, EditText mEditText, Button mbutton) //obsluga wprowadzania danych przez uzytkownika
+        void Action()
         {
-            mbutton.Enabled = false;
-            mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
+            mButton.Enabled = false;
+            mButton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
             mEditText.Text = "";
             expression = delgen();
             mTextView.Text = expression.displayvalue;
@@ -55,18 +62,16 @@ namespace Maths.Resources.BaseActivities
                 {
                     if (mEditText.Text != "")
                     {
+                        mButton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
+                        mButton.Enabled = true;
                         if (delcom(mEditText.Text, expression))
                         {
                             mTextView.Text = "Dobrze!";
-                            mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
-                            mbutton.Enabled = true;
                             flag = true;
                         }
                         if (!delcom(mEditText.Text, expression))
                         {
                             mTextView.Text = "èle!";
-                            mbutton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
-                            mbutton.Enabled = true;
                             flag = false;
                         }
                         i.Handled = true;
@@ -74,9 +79,8 @@ namespace Maths.Resources.BaseActivities
                 }
             };
         }
-
-        //wyswietla prawidlowa odpowiedz gdy user popelnil blad
-        private void FalseAnswer(TextView mTextView, EditText mEditText)
+        
+        void ShowCorrectAnswer()
         {
             mTextView.Text = "Poprawna odpowiedü:";
             mEditText.Text = Convert.ToString(expression.correctanswer);

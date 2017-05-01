@@ -8,10 +8,10 @@ namespace Maths.Resources.ActivitiesInteger
     [Activity(Label = "Subtraction2")]
     public class Subtraction2 : IntegerActivity
     {
-        public override void Initialize()
+        protected override void Initialize()
         {
-            delgen = IntegerFunctions.GenerateSubtraction;
-            delcom = IntegerFunctions.VerifySubtraction;
+            DelGen = IntegerFunctions.GenerateSubtraction;
+            DelCom = IntegerFunctions.VerifySubtraction;
         }
 
         protected override void OnCreate(Bundle savedInstanceState)

@@ -8,7 +8,7 @@ namespace Maths.Resources.ActivitiesInteger
     [Activity(Label = "Mix")]
     public class Mix : IntegerActivity
     {
-        public override void Initialize()
+        protected override void Initialize()
         {
             int tmp = UniversalFunctions.Rand(1, 100);
             tmp %= 4 +1;
@@ -16,20 +16,20 @@ namespace Maths.Resources.ActivitiesInteger
             switch (tmp)
             {
                 case 1:
-                    delgen = IntegerFunctions.GenerateAddition;
-                    delcom = IntegerFunctions.VerifyAddition;
+                    DelGen = IntegerFunctions.GenerateAddition;
+                    DelCom = IntegerFunctions.VerifyAddition;
                     break;
                 case 2:
-                    delgen = IntegerFunctions.GenerateSubtraction;
-                    delcom = IntegerFunctions.VerifySubtraction;
+                    DelGen = IntegerFunctions.GenerateSubtraction;
+                    DelCom = IntegerFunctions.VerifySubtraction;
                     break;
                 case 3:
-                    delgen = IntegerFunctions.GenerateMultiplication;
-                    delcom = IntegerFunctions.VerifyMultiplication;
+                    DelGen = IntegerFunctions.GenerateMultiplication;
+                    DelCom = IntegerFunctions.VerifyMultiplication;
                     break;
                 case 4:
-                    delgen = DivisionTable.GetValue;
-                    delcom = IntegerFunctions.VerifyDivision;
+                    DelGen = DivisionTable.GetValue;
+                    DelCom = IntegerFunctions.VerifyDivision;
                     break;
                 default: 
                     break;

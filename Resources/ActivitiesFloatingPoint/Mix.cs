@@ -8,7 +8,7 @@ namespace Maths.Resources.ActivitiesFloatingPoint
     [Activity(Label = "Mix")]
     public class Mix : FloatingPointActivity
     {
-        public override void Initialize()
+        protected override void Initialize()
         {
             int tmp = UniversalFunctions.Rand(1, 100);
             tmp %= 4 + 1;

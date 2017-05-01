@@ -72,6 +72,7 @@
     <Compile Include="Resources\ActivitiesInteger\Multiplication2.cs" />
     <Compile Include="Resources\Functionalities\MathsStructures.cs" />
     <Compile Include="Resources\Functionalities\OrdinaryFractionsFunction.cs" />
+    <Compile Include="Resources\Functionalities\PercentFunction.cs" />
     <Compile Include="Resources\Functionalities\UniversalFunctions.cs" />
     <Compile Include="Resources\ActivitiesInteger\Subtraction2.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

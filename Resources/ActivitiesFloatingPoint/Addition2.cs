@@ -8,7 +8,7 @@ namespace Maths.Resources.ActivitiesFloatingPoint
     [Activity(Label = "Addition2")]
     public class Addition2 : FloatingPointActivity
     {
-        public override void Initialize()
+        protected override void Initialize()
         {
             delgen = FloatingPointNumberFunction.GenerateAddition;
             delcom = FloatingPointNumberFunction.VerifyAddition;
