@@ -66,6 +66,7 @@
     <Compile Include="Resources\BaseActivities\FloatingPointActivity.cs" />
     <Compile Include="Resources\BaseActivities\IntegerActivity.cs" />
     <Compile Include="Resources\BaseActivities\OrdinaryFractionsActivity.cs" />
+    <Compile Include="Resources\BaseActivities\PercentsActivity.cs" />
     <Compile Include="Resources\Functionalities\FloatingPointNumberFunction.cs" />
     <Compile Include="Resources\Functionalities\IntegerFunction.cs" />
     <Compile Include="Resources\ActivitiesInteger\Multiplication2.cs" />
