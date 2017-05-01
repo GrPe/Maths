@@ -25,7 +25,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool CompareExpression1(string value, Percents2 exp)
         {
-            return value == Convert.ToString(exp.correctvalue);
+            return Convert.ToDecimal(value) == exp.correctvalue;
         }
         
         public delegate Percents2 DelGenerate();

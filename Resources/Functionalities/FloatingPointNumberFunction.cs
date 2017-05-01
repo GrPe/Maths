@@ -27,7 +27,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool VerifyAddition(string value, ValueDecimal2 exp)
         {
-            return (Convert.ToString(exp.a + exp.b) == value);
+            return exp.correctanswer == Convert.ToDecimal(value);
         }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool VerifySubtraction(string value, ValueDecimal2 exp)
         {
-            return Convert.ToString(exp.a - exp.b) == value;
+            return exp.correctanswer == Convert.ToDecimal(value);
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool VerifyMultiplication(string value, ValueDecimal2 exp)
         {
-            return Convert.ToString(exp.a * exp.b) == value;
+            return exp.correctanswer == Convert.ToDecimal(value);
         }
 
         /// <summary>
@@ -60,16 +60,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool VerifyDivision(string value, ValueDecimal2 exp)
         {
-            decimal tmp;
-            try
-            {
-                tmp = exp.a / exp.b;
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
-            return value == Convert.ToString(tmp);
+            return Convert.ToDecimal(value) == exp.correctanswer;
         }
 
 
