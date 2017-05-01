@@ -1,11 +1,21 @@
 using System;
 using System.Collections.Generic;
-using static Functionalities.MathsStructures;
+using static Functionalities.IntegerFunctions;
 
 namespace Functionalities
 {
     static class IntegerFunctions
     {
+        /// <summary>
+        /// Przechowuje wyrazenie zlozone z 2 liczb
+        /// </summary>
+        public struct ValueInt2
+        {
+            public int a;
+            public int b;
+            public int correctanswer;
+            public string displayvalue;
+        }
 
         public delegate bool DelCompare(string value, ValueInt2 exp);
 

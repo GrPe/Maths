@@ -16,19 +16,19 @@ namespace Maths.Resources.ActivitiesFloatingPoint
             switch (tmp)
             {
                 case 1:
-                    DelGen = FloatingPointNumberFunction.GenerateAddition;
+                    delgen = FloatingPointNumberFunction.GenerateAddition;
                     DelCom = FloatingPointNumberFunction.VerifyAddition;
                     break;
                 case 2:
-                    DelGen = FloatingPointNumberFunction.GenerateSubtraction;
+                    delgen = FloatingPointNumberFunction.GenerateSubtraction;
                     DelCom = FloatingPointNumberFunction.VerifySubtraction;
                     break;
                 case 3:
-                    DelGen = FloatingPointNumberFunction.GenerateMultiplication;
+                    delgen = FloatingPointNumberFunction.GenerateMultiplication;
                     DelCom = FloatingPointNumberFunction.VerifyMultiplication;
                     break;
                 case 4:
-                    DelGen = DivisionTableOfFloatingPoints.GetValue;
+                    delgen = DivisionTableOfFloatingPoints.GetValue;
                     DelCom = FloatingPointNumberFunction.VerifyDivision;
                     break;
                 default:

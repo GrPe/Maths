@@ -9,12 +9,31 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using static Functionalities.MathsStructures;
 
 namespace Functionalities
 {
     static class OrdinaryFractionsFunction
     {
+        /// <summary>
+        /// Ordinary Fraction Structure
+        /// </summary>
+        public struct SimpleOrdinaryFractions
+        {
+            public int counter;
+            public int denominator;
+        }
+
+
+        /// <summary>
+        /// Expression with 2 Ordinary Fractions
+        /// </summary>
+        public struct OridinaryFractions2
+        {
+            public SimpleOrdinaryFractions a;
+            public SimpleOrdinaryFractions b;
+            public string _operator;
+        }
+
         public delegate bool DelCompare(string valuecounter, string valuedenominator, OridinaryFractions2 exp);
 
         /// <summary>

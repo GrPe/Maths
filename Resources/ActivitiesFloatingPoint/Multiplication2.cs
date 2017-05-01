@@ -20,7 +20,7 @@ namespace Maths.Resources.ActivitiesFloatingPoint
         protected override void Initialize()
         {
             DelCom = FloatingPointNumberFunction.VerifyMultiplication;
-            DelGen = FloatingPointNumberFunction.GenerateMultiplication;
+            delgen = FloatingPointNumberFunction.GenerateMultiplication;
         }
 
         protected override void OnCreate(Bundle savedInstanceState)

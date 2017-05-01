@@ -11,7 +11,7 @@ namespace Maths.Resources.BaseActivities
     public class IntegerActivity : Activity
     {
         //initialize components
-        MathsStructures.ValueInt2 expression = new MathsStructures.ValueInt2();
+        IntegerFunctions.ValueInt2 expression = new IntegerFunctions.ValueInt2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
         TextView mTextView;
         EditText mEditText;

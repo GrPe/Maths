@@ -1,11 +1,22 @@
 using System;
 using System.Collections.Generic;
-using static Functionalities.MathsStructures;
+using static Functionalities.FloatingPointNumberFunction;
 
 namespace Functionalities
 {
     static class FloatingPointNumberFunction
     {
+        /// <summary>
+        /// Przechowuje wyrazenie zlozone z 2 liczby double
+        /// </summary>
+        public struct ValueDecimal2
+        {
+            public decimal a;
+            public decimal b;
+            public decimal correctanswer;
+            public string displayvalue;
+        }
+
         public delegate bool DelCompare(string value, ValueDecimal2 exp);
 
         /// <summary>
