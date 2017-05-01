@@ -63,6 +63,8 @@
     <Compile Include="Resources\ActivitiesInteger\Mix.cs" />
     <Compile Include="Resources\ActivitiesLearn\FloatingPoint.cs" />
     <Compile Include="Resources\ActivitiesLearn\OrdinaryFractions.cs" />
+    <Compile Include="Resources\ActivitiesLearn\Percents.cs" />
+    <Compile Include="Resources\ActivitiesPercents\Expression1.cs" />
     <Compile Include="Resources\BaseActivities\FloatingPointActivity.cs" />
     <Compile Include="Resources\BaseActivities\IntegerActivity.cs" />
     <Compile Include="Resources\BaseActivities\OrdinaryFractionsActivity.cs" />
@@ -101,6 +103,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\OrdinaryFractions.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Percents.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -3,17 +3,16 @@ using Android.OS;
 using Maths.Resources.BaseActivities;
 using Functionalities;
 
-namespace Maths.Resources.ActivitiesFloatingPoint
+namespace Maths.Resources.ActivitiesPercents
 {
-    [Activity(Label = "Subtraction2")]
-    public class Subtraction2 : FloatingPointActivity
+    [Activity(Label = "Expression1")]
+    public class Expression1 : PercentsActivity
     {
         protected override void Initialize()
         {
-            DelGen = FloatingPointNumberFunction.GenerateSubtraction;
-            DelCom = FloatingPointNumberFunction.VerifySubtraction;
+            DelCom = PercentFunction.CompareExpression1;
+            DelGen = PercentFunction.GenerateExpression1;
         }
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

@@ -1,10 +1,20 @@
 using System;
-using static Functionalities.MathsStructures;
 
 namespace Functionalities
 {
     static class PercentFunction
     {
+        /// <summary>
+        /// Expression of Percents
+        /// </summary>
+        public struct Percents2
+        {
+            public int Value;
+            public decimal Percent;
+            public decimal correctvalue;
+            public string displayvalue;
+        }
+
         public delegate bool DelCompare(string value, Percents2 exp);
 
         /// <summary>
@@ -15,7 +25,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool CompareExpression1(string value, Percents2 exp)
         {
-            return value == Convert.ToString(exp.Value * exp.Percent);
+            return value == Convert.ToString(exp.correctvalue);
         }
         
         public delegate Percents2 DelGenerate();

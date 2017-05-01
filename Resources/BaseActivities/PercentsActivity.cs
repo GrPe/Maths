@@ -11,7 +11,7 @@ namespace Maths.Resources.BaseActivities
     public class PercentsActivity : Activity
     {
         //initialize components
-        MathsStructures.Percents2 expression = new MathsStructures.Percents2();
+        PercentFunction.Percents2 expression = new PercentFunction.Percents2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
         TextView mTextView;
         EditText mEditText;
@@ -20,7 +20,7 @@ namespace Maths.Resources.BaseActivities
         //initialize  variable to be used by derived class
         internal PercentFunction.DelCompare DelCom;
         internal PercentFunction.DelGenerate DelGen;
-        internal bool ifmix = true; //czy aktywna jest activity mix
+        internal bool ifmix = false; //czy aktywna jest activity mix
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

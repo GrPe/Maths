@@ -18,8 +18,8 @@ namespace Maths.Resources.BaseActivities
         Button mButton;
 
         //initialize  variable to be used by derived class
-        internal FloatingPointNumberFunction.DelCompare delcom;
-        internal FloatingPointNumberFunction.DelGenerate delgen;
+        internal FloatingPointNumberFunction.DelCompare DelCom;
+        internal FloatingPointNumberFunction.DelGenerate DelGen;
         internal bool ifmix = false; //czy aktywna jest activity mix
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -28,9 +28,9 @@ namespace Maths.Resources.BaseActivities
             SetContentView(Resource.Layout.View_BaseMaths);
 
             //set default components
-            TextView mTextView = FindViewById<TextView>(Resource.Id.textview_View_BaseMahs);
-            EditText mEditText = FindViewById<EditText>(Resource.Id.edittext_View_BaseMaths);
-            Button mButton = FindViewById<Button>(Resource.Id.button_View_BaseMaths_Next);
+            mTextView = FindViewById<TextView>(Resource.Id.textview_View_BaseMahs);
+            mEditText = FindViewById<EditText>(Resource.Id.edittext_View_BaseMaths);
+            mButton = FindViewById<Button>(Resource.Id.button_View_BaseMaths_Next);
             Initialize();
 
             //Main activity
@@ -53,7 +53,7 @@ namespace Maths.Resources.BaseActivities
             mButton.Enabled = false;
             mButton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
             mEditText.Text = "";
-            expression = delgen();
+            expression = DelGen();
             mTextView.Text = expression.displayvalue;
             mEditText.KeyPress += (object sender, View.KeyEventArgs i) =>
             {
@@ -64,12 +64,12 @@ namespace Maths.Resources.BaseActivities
                     {
                         mButton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#00aced")); //blue
                         mButton.Enabled = true;
-                        if (delcom(mEditText.Text, expression))
+                        if (DelCom(mEditText.Text, expression))
                         {
                             mTextView.Text = "Dobrze!";
                             flag = true;
                         }
-                        if (!delcom(mEditText.Text, expression))
+                        if (!DelCom(mEditText.Text, expression))
                         {
                             mTextView.Text = "èle!";
                             flag = false;

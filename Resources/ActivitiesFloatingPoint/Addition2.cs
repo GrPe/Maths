@@ -10,8 +10,8 @@ namespace Maths.Resources.ActivitiesFloatingPoint
     {
         protected override void Initialize()
         {
-            delgen = FloatingPointNumberFunction.GenerateAddition;
-            delcom = FloatingPointNumberFunction.VerifyAddition;
+            DelGen = FloatingPointNumberFunction.GenerateAddition;
+            DelCom = FloatingPointNumberFunction.VerifyAddition;
         }
 
         protected override void OnCreate(Bundle savedInstanceState)

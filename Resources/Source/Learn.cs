@@ -45,6 +45,14 @@ namespace Maths.Resources.Source
             };
             #endregion
 
+            #region button4 - Percents
+            Button button4 = FindViewById<Button>(Resource.Id.buttonPercents);
+            button4.Click += delegate
+             {
+                 StartActivity(typeof(Percents));
+             };
+            #endregion
+
         }
     }
 }

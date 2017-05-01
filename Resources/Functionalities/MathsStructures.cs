@@ -56,17 +56,5 @@ namespace Functionalities
             public SimpleOrdinaryFractions b;
             public string _operator;
         }
-
-
-        /// <summary>
-        /// Expression of Percents
-        /// </summary>
-        public struct Percents2
-        {
-            public int Value;
-            public decimal Percent;
-            public decimal correctvalue;
-            public string displayvalue;
-        }
     }
 }
