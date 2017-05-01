@@ -49,7 +49,7 @@ namespace Maths.Resources.ActivitiesLearn
             Button button5 = FindViewById<Button>(Resource.Id.buttonIntegerCombinedBasic2);
             button5.Click += delegate
             {
-                StartActivity(typeof(Settings_BasicMaths));
+                StartActivity(typeof(Mix));
             };
 
             #endregion

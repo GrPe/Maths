@@ -29,11 +29,11 @@ namespace Functionalities
         /// <summary>
         /// Przechowuje wyrazenie zlozone z 2 liczby double
         /// </summary>
-        public struct ValueDouble2
+        public struct ValueDecimal2
         {
-            public double a;
-            public double b;
-            public double correctanswer;
+            public decimal a;
+            public decimal b;
+            public decimal correctanswer;
             public string displayvalue;
         }
 

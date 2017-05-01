@@ -24,13 +24,13 @@ namespace Functionalities
         /// <param name="min">minimal value</param>
         /// <param name="max">maximal value</param>
         /// <returns></returns>
-        public static double RandDouble(double min,double max)
+        public static decimal RandDecimal(decimal min,decimal max)
         {
             min *= 100;
             max *= 100;
             int imin = (int)min;
             int imax = (int)max;
-            double ret = NValue.Next(imin, imax);
+            decimal ret = NValue.Next(imin, imax);
             return (ret / 100);
         }
 
@@ -42,13 +42,13 @@ namespace Functionalities
         /// <param name="max">maximal value</param>
         /// <param name="acc">accuracy of randomized number (format - 10/100) 10 = 0.1</param>
         /// <returns></returns>
-        public static double RandDouble(double min,double max, int acc)
+        public static decimal RandDecimal(decimal min,decimal max, int acc)
         {
             min *= acc;
             max *= acc;
             int imin = (int)min;
             int imax = (int)max;
-            double ret = NValue.Next(imin, imax);
+            decimal ret = NValue.Next(imin, imax);
             return (ret / acc);
         }
 

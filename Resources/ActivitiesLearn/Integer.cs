@@ -12,7 +12,7 @@ namespace Maths.Resources.ActivitiesLearn
         {
             base.OnCreate(savedInstanceState);
 
-             SetContentView(Resource.Layout.Integer);
+            SetContentView(Resource.Layout.Integer);
             #region button1 - Addition2
             Button button1 = FindViewById<Button>(Resource.Id.buttonIntegerAddiction2);
             button1.Click += delegate

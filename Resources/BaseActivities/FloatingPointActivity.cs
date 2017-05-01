@@ -10,7 +10,7 @@ namespace Maths.Resources.BaseActivities
     [Activity(Label = "FloatingPointActivity")]
     public class FloatingPointActivity : Activity
     {
-        MathsStructures.ValueDouble2 expression = new MathsStructures.ValueDouble2();
+        MathsStructures.ValueDecimal2 expression = new MathsStructures.ValueDecimal2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
 
         internal FloatingPointNumberFunction.DelCompare delcom;
