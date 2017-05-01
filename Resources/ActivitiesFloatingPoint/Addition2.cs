@@ -10,7 +10,7 @@ namespace Maths.Resources.ActivitiesFloatingPoint
     {
         protected override void Initialize()
         {
-            delgen = FloatingPointNumberFunction.GenerateAddition;
+            DelGen = FloatingPointNumberFunction.GenerateAddition;
             DelCom = FloatingPointNumberFunction.VerifyAddition;
         }
 

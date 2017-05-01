@@ -11,7 +11,7 @@ namespace Maths.Resources.ActivitiesFloatingPoint
         protected override void Initialize()
         {
             DivisionTableOfFloatingPoints.Initialize();
-            delgen = DivisionTableOfFloatingPoints.GetValue;
+            DelGen = DivisionTableOfFloatingPoints.GetValue;
             DelCom = FloatingPointNumberFunction.VerifyDivision;
         }
 

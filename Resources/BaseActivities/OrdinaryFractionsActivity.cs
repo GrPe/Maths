@@ -16,7 +16,7 @@ namespace Maths.Resources.BaseActivities
     [Activity(Label = "OrdinaryFractionsActivity")]
     public class OrdinaryFractionsActivity : Activity
     {
-        MathsStructures.OridinaryFractions2 expression = new MathsStructures.OridinaryFractions2();
+        OrdinaryFractionsFunction.OridinaryFractions2 expression = new OrdinaryFractionsFunction.OridinaryFractions2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
 
         internal OrdinaryFractionsFunction.DelCompare delcom;

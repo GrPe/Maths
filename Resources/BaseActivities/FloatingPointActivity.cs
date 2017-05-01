@@ -19,7 +19,7 @@ namespace Maths.Resources.BaseActivities
 
         //initialize  variable to be used by derived class
         internal FloatingPointNumberFunction.DelCompare DelCom;
-        internal FloatingPointNumberFunction.DelGenerate delgen;
+        internal FloatingPointNumberFunction.DelGenerate DelGen;
         internal bool ifmix = false; //czy aktywna jest activity mix
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -53,7 +53,7 @@ namespace Maths.Resources.BaseActivities
             mButton.Enabled = false;
             mButton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
             mEditText.Text = "";
-            expression = delgen();
+            expression = DelGen();
             mTextView.Text = expression.displayvalue;
             mEditText.KeyPress += (object sender, View.KeyEventArgs i) =>
             {
