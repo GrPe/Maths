@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 namespace Functionalities
 {
@@ -25,7 +26,7 @@ namespace Functionalities
         /// <returns></returns>
         public static bool CompareExpression1(string value, Percents2 exp)
         {
-            return Convert.ToDecimal(value) == exp.correctvalue;
+            return (int)Convert.ToDecimal(value) == (int)exp.correctvalue;
         }
         
         public delegate Percents2 DelGenerate();
@@ -39,8 +40,15 @@ namespace Functionalities
         {
             Percents2 exp;
             exp.Value = UniversalFunctions.Rand(5, 100);
+            int count = 0;
             do
             {
+                count++;
+                if(count>150)
+                {
+                    count = 0;
+                    exp.Value = UniversalFunctions.Rand(5, 100);
+                }
                 exp.Percent = UniversalFunctions.RandDecimal(0.01m, 1.0m, 100);
             } while ((exp.Value * exp.Percent) != (int)(exp.Value * exp.Percent));
 
