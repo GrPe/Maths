@@ -1,12 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Functionalities;
@@ -18,6 +12,7 @@ namespace Maths.Resources.BaseActivities
     {
         OrdinaryFractionsFunction.OridinaryFractions2 expression = new OrdinaryFractionsFunction.OridinaryFractions2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
+        bool main = true; //czy jest w g≥Ûwnej peltli aplikacji
 
         internal OrdinaryFractionsFunction.DelCompare Delcom;
         internal OrdinaryFractionsFunction.DelGenerate Delgen;
@@ -40,6 +35,7 @@ namespace Maths.Resources.BaseActivities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.OrdinaryFractions);
 
+            //set default components
             mTextViewCounter1 = FindViewById<TextView>(Resource.Id.OFCounter1);
             mTextViewDenominator1 = FindViewById<TextView>(Resource.Id.OFDenominator1);
             mTextViewCounter2 = FindViewById<TextView>(Resource.Id.OFCounter2);
@@ -51,16 +47,22 @@ namespace Maths.Resources.BaseActivities
             mTextViewFractionalMark1 = FindViewById<TextView>(Resource.Id.OFFractionalMark1);
             mTextViewFractionalMark2 = FindViewById<TextView>(Resource.Id.OFFractionalMark2);
             mButton = FindViewById<Button>(Resource.Id.OFButtonNext);
+            mEditTextCounter3.InputType = Android.Text.InputTypes.ClassNumber;
+            mEditTextDenominator3.InputType = Android.Text.InputTypes.ClassNumber;
 
             Inizalize();
 
-            //Action
-            mButton.Click += delegate
-             {
-                 if (ifmix) Inizalize(); //Na potrzeby activity mix
-                 if (flag) Action();
-                 else ShowCorrectAnswer();
-             };
+            //Main activity
+            Action();
+            if(main)
+            {
+                mButton.Click += delegate
+                {
+                    if (ifmix) Inizalize(); //Na potrzeby activity mix
+                    if (flag) Action();
+                    else ShowCorrectAnswer();
+                };
+            }
         }
 
         public virtual void Inizalize()
@@ -71,11 +73,12 @@ namespace Maths.Resources.BaseActivities
         private void Action()
         {
             TurnOnVisibility();
-            bool checkcounter = false;
-            bool checkdenominator = false;
+            //bool checkcounter = false;
+            //bool checkdenominator = false;
+            main = false;
 
-            mButton.Enabled = false;
-            mButton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
+           // mButton.Enabled = false;
+           // mButton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
             mEditTextCounter3.Text = "";
             mEditTextDenominator3.Text = "";
             expression = Delgen();
@@ -88,31 +91,54 @@ namespace Maths.Resources.BaseActivities
             mTextViewChar.Text = expression._operator;
 
             //Both textfield are full
-            mEditTextCounter3.KeyPress += (object sender, View.KeyEventArgs i) =>
-            {
-                if (i.Event.Action == KeyEventActions.Down && i.KeyCode == Keycode.Enter) checkcounter = true;
-            };
-            mEditTextDenominator3.KeyPress += (object sender, View.KeyEventArgs i) =>
-            {
-                if (i.Event.Action == KeyEventActions.Down && i.KeyCode == Keycode.Enter) checkdenominator = true;
-            };
+            //mEditTextCounter3.KeyPress += (object sender, View.KeyEventArgs i) =>
+            //{
+            //    i.Handled = false;
+            //    if (i.Event.Action == KeyEventActions.Down && i.KeyCode == Keycode.Enter)
+            //    {
+            //       // checkcounter = true;
+            //        i.Handled = true;
+            //    }
+
+            //};
+            //mEditTextDenominator3.KeyPress += (object sender, View.KeyEventArgs i) =>
+            //{
+            //    i.Handled = false;
+            //    if (i.Event.Action == KeyEventActions.Down && i.KeyCode == Keycode.Enter)
+            //    {
+            //       // checkdenominator = true;
+            //        i.Handled = true;
+            //    }
+            //};
+
+            ////enabled button - verification
+            //if (checkcounter && checkdenominator
+            //    //!mEditTextCounter3.Text.Equals("") &&
+            //    //!mEditTextDenominator3.Text.Equals("")
+            //    ) mButton.Enabled = true;
+
+            //mButton.Enabled = true;
 
             //activate verification
-            if (checkcounter && checkdenominator &&
-                !mEditTextCounter3.Text.Equals("") &&
-                !mEditTextDenominator3.Text.Equals("")
-                ) Verify();
-
+            mButton.Click += delegate
+            {
+                if (!mEditTextCounter3.Text.Equals("") &&
+                !mEditTextDenominator3.Text.Equals(""))
+                {
+                    Verify();
+                    main = true;
+                }
+            };
         }
-        
+
         private void Verify()
         {
-            if(Delcom(mEditTextCounter3.Text,mEditTextDenominator3.Text,expression))
+            if (Delcom(mEditTextCounter3.Text, mEditTextDenominator3.Text, expression))
             {
                 flag = true;
                 CorrectAnswer();
             }
-            if(!Delcom(mEditTextCounter3.Text, mEditTextDenominator3.Text, expression))
+            if (!Delcom(mEditTextCounter3.Text, mEditTextDenominator3.Text, expression))
             {
                 flag = false;
                 WrongAnswer();
@@ -123,7 +149,6 @@ namespace Maths.Resources.BaseActivities
         {
             TurnOffVisibility();
             mTextViewChar.Text = "Dobrze!";
-            
         }
 
         private void WrongAnswer()
@@ -136,7 +161,7 @@ namespace Maths.Resources.BaseActivities
         {
             TurnOffVisibility();
             mTextViewChar.Text = "Poprawna odpowiedü:";
-           // mEditTextCounter3.Text = Convert.ToString(expression.)
+            // mEditTextCounter3.Text = Convert.ToString(expression.)
         }
 
         private void TurnOffVisibility()
