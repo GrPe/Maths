@@ -72,6 +72,7 @@
     <Compile Include="Resources\ActivitiesLearn\FloatingPoint.cs" />
     <Compile Include="Resources\ActivitiesLearn\OrdinaryFractions.cs" />
     <Compile Include="Resources\ActivitiesLearn\Percents.cs" />
+    <Compile Include="Resources\ActivitiesOrdinaryFraction\Addition2.cs" />
     <Compile Include="Resources\ActivitiesPercents\Expression1.cs" />
     <Compile Include="Resources\BaseActivities\FloatingPointActivity.cs" />
     <Compile Include="Resources\BaseActivities\IntegerActivity.cs" />

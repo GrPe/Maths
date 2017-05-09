@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Maths.Resources.ActivitiesOrdinaryFraction;
 
 namespace Maths.Resources.ActivitiesLearn
 {
@@ -19,13 +20,13 @@ namespace Maths.Resources.ActivitiesLearn
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Integer);
-            //#region button1 - Addition2
-            //Button button1 = FindViewById<Button>(Resource.Id.buttonIntegerAddiction2);
-            //button1.Click += delegate
-            //{
-            //    StartActivity(typeof(Addition2));
-            //};
-            //#endregion
+            #region button1 - addition2
+            Button button1 = FindViewById<Button>(Resource.Id.buttonIntegerAddiction2);
+            button1.Click += delegate
+            {
+                StartActivity(typeof(Addition2));
+            };
+            #endregion
 
             //#region button2 - Subtraction2
             //Button button2 = FindViewById<Button>(Resource.Id.buttonIntegerSubtraction2);

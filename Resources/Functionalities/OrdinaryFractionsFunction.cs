@@ -31,6 +31,7 @@ namespace Functionalities
         {
             public SimpleOrdinaryFractions a;
             public SimpleOrdinaryFractions b;
+           // public SimpleOrdinaryFractions correctanswer;
             public string _operator;
         }
 
