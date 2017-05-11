@@ -49,16 +49,15 @@ namespace Functionalities
             SimpleOrdinaryFractions result;
 
             result.denominator = UniversalFunctions.LCM(exp.a.denominator, exp.b.denominator);
-            int tmpcountera = exp.a.counter * (result.denominator / exp.a.counter);
-            int tmpcounterb = exp.b.counter * (result.denominator / exp.b.counter);
+            int tmpCounterA = exp.a.counter * (result.denominator / exp.a.denominator);
+            int tmpCounterB = exp.b.counter * (result.denominator / exp.b.denominator);
 
-            result.counter = tmpcountera + tmpcounterb;
-
+            result.counter = tmpCounterA + tmpCounterB;
             result.counter /= UniversalFunctions.GCD(result.counter, result.denominator);
             result.denominator /= UniversalFunctions.GCD(result.counter, result.denominator);
 
-            return (Convert.ToInt32(valuecounter) == result.counter &&
-                Convert.ToInt32(valuedenominator) == result.denominator);
+            return (valuecounter.Equals(Convert.ToString(result.counter)) &&
+                valuedenominator.Equals(Convert.ToString(result.denominator)));
         }
 
 
@@ -72,9 +71,9 @@ namespace Functionalities
         public static OridinaryFractions2 GenerateAddition()
         {
             OridinaryFractions2 ret;
-            ret.a.counter = UniversalFunctions.Rand(1, 9);
+            ret.a.counter = UniversalFunctions.Rand(1, 8);
             ret.a.denominator = UniversalFunctions.Rand(1, 9);
-            ret.b.counter = UniversalFunctions.Rand(1, 9);
+            ret.b.counter = UniversalFunctions.Rand(1, 8);
             ret.b.denominator = UniversalFunctions.Rand(1, 9);
             ret._operator = "+";
 
