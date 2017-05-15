@@ -14,15 +14,14 @@ using Functionalities;
 
 namespace Maths.Resources.ActivitiesOrdinaryFraction
 {
-    [Activity(Label = "Addition2")]
-    public class Addition2 : OrdinaryFractionsActivity
+    [Activity(Label = "Multiplication2")]
+    public class Multiplication2 : OrdinaryFractionsActivity
     {
         public override void Inizalize()
         {
+            Delgen = OrdinaryFractionsFunction.GenerateMultiplication;
             Delcom = OrdinaryFractionsFunction.VerifyAswers;
-            Delgen = OrdinaryFractionsFunction.GenerateAddition;
         }
-
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

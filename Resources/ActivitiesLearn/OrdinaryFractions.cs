@@ -1,13 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Maths.Resources.ActivitiesOrdinaryFraction;
 
@@ -28,21 +20,21 @@ namespace Maths.Resources.ActivitiesLearn
             };
             #endregion
 
-            //#region button2 - Subtraction2
-            //Button button2 = FindViewById<Button>(Resource.Id.buttonIntegerSubtraction2);
-            //button2.Click += delegate
-            //{
-            //    StartActivity(typeof(Subtraction2));
-            //};
-            //#endregion
+            #region button2 - Subtraction2
+            Button button2 = FindViewById<Button>(Resource.Id.buttonIntegerSubtraction2);
+            button2.Click += delegate
+            {
+                StartActivity(typeof(Subtraction2));
+            };
+            #endregion
 
-            //#region button3 - Multiplication2
-            //Button button3 = FindViewById<Button>(Resource.Id.buttonIntegerMultiplication2);
-            //button3.Click += delegate
-            //{
-            //    StartActivity(typeof(Multiplication2));
-            //};
-            //#endregion
+            #region button3 - Multiplication2
+            Button button3 = FindViewById<Button>(Resource.Id.buttonIntegerMultiplication2);
+            button3.Click += delegate
+            {
+                StartActivity(typeof(Multiplication2));
+            };
+            #endregion
 
             //#region button4 - Division2
             //Button button4 = FindViewById<Button>(Resource.Id.buttonIntegerDivision2);

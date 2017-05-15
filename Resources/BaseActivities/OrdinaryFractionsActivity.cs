@@ -10,7 +10,7 @@ namespace Maths.Resources.BaseActivities
     [Activity(Label = "OrdinaryFractionsActivity")]
     public class OrdinaryFractionsActivity : Activity
     {
-        OrdinaryFractionsFunction.OridinaryFractions2 expression = new OrdinaryFractionsFunction.OridinaryFractions2();
+        OrdinaryFractionsFunction.OrdinaryFractions2 expression = new OrdinaryFractionsFunction.OrdinaryFractions2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
         bool main = true; //czy jest w g³ównej petli aplikacji
 

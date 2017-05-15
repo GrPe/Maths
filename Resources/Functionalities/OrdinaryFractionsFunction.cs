@@ -27,7 +27,7 @@ namespace Functionalities
         /// <summary>
         /// Expression with 2 Ordinary Fractions
         /// </summary>
-        public struct OridinaryFractions2
+        public struct OrdinaryFractions2
         {
             public SimpleOrdinaryFractions a;
             public SimpleOrdinaryFractions b;
@@ -35,7 +35,7 @@ namespace Functionalities
             public string _operator;
         }
 
-        public delegate bool DelCompare(string valuecounter, string valuedenominator, OridinaryFractions2 exp);
+        public delegate bool DelCompare(string valuecounter, string valuedenominator, OrdinaryFractions2 exp);
 
         /// <summary>
         /// Verify correctness of Addition Ordinary Fractions
@@ -44,33 +44,23 @@ namespace Functionalities
         /// <param name="valuedenominator">denominator of result</param>
         /// <param name="exp">original value</param>
         /// <returns></returns>
-        public static bool VerifyAddition(string valuecounter, string valuedenominator, OridinaryFractions2 exp)
+        public static bool VerifyAswers(string valuecounter, string valuedenominator, OrdinaryFractions2 exp)
         {
-           // SimpleOrdinaryFractions result;
-
-            //result.denominator = UniversalFunctions.LCM(exp.a.denominator, exp.b.denominator);
-            //int tmpCounterA = exp.a.counter * (result.denominator / exp.a.denominator);
-            //int tmpCounterB = exp.b.counter * (result.denominator / exp.b.denominator);
-
-            //result.counter = tmpCounterA + tmpCounterB;
-            //result.counter /= UniversalFunctions.GCD(result.counter, result.denominator);
-            //result.denominator /= UniversalFunctions.GCD(result.counter, result.denominator);
-
             return (valuecounter.Equals(Convert.ToString(exp.correctanswer.counter)) &&
                 valuedenominator.Equals(Convert.ToString(exp.correctanswer.denominator)));
         }
 
 
-        public delegate OridinaryFractions2 DelGenerate();
+        public delegate OrdinaryFractions2 DelGenerate();
 
 
         /// <summary>
         /// Return an expression of two Ordinary Fractions
         /// </summary>
         /// <returns></returns>
-        public static OridinaryFractions2 GenerateAddition()
+        public static OrdinaryFractions2 GenerateAddition()
         {
-            OridinaryFractions2 ret;
+            OrdinaryFractions2 ret;
             ret.a.counter = UniversalFunctions.Rand(1, 8);
             ret.a.denominator = UniversalFunctions.Rand(1, 9);
             ret.b.counter = UniversalFunctions.Rand(1, 8);
@@ -82,8 +72,52 @@ namespace Functionalities
             int tmpCounterB = ret.b.counter * (ret.correctanswer.denominator / ret.b.denominator);
 
             ret.correctanswer.counter = tmpCounterA + tmpCounterB;
-            ret.correctanswer.counter /= UniversalFunctions.GCD(ret.correctanswer.counter, ret.correctanswer.denominator);
-            ret.correctanswer.denominator /= UniversalFunctions.GCD(ret.correctanswer.counter, ret.correctanswer.denominator);
+            int tmpGCD = UniversalFunctions.GCD(ret.correctanswer.counter, ret.correctanswer.denominator);
+            ret.correctanswer.counter /= tmpGCD;
+            ret.correctanswer.denominator /= tmpGCD;
+
+            return ret;
+        }
+
+        public static OrdinaryFractions2 GenerateSubtraction2()
+        {
+            OrdinaryFractions2 ret;
+            do
+            {
+                ret.a.counter = UniversalFunctions.Rand(3, 10);
+                ret.a.denominator = UniversalFunctions.Rand(2, 10);
+                ret.b.counter = UniversalFunctions.Rand(1, 9);
+                ret.b.denominator = UniversalFunctions.Rand(1, 9);
+                ret._operator = "-";
+
+                ret.correctanswer.denominator = UniversalFunctions.LCM(ret.a.denominator, ret.b.denominator);
+                int tmpCounterA = ret.a.counter * (ret.correctanswer.denominator / ret.a.denominator);
+                int tmpCounterB = ret.b.counter * (ret.correctanswer.denominator / ret.b.denominator);
+
+                ret.correctanswer.counter = tmpCounterA - tmpCounterB;
+                if (ret.correctanswer.counter < 0) continue;
+                int tmpGCD = UniversalFunctions.GCD(ret.correctanswer.counter, ret.correctanswer.denominator);
+                ret.correctanswer.counter /= tmpGCD;
+                ret.correctanswer.denominator /= tmpGCD;
+            } while (ret.correctanswer.counter < 0);
+
+            return ret;
+        }
+
+        public static OrdinaryFractions2 GenerateMultiplication()
+        {
+            OrdinaryFractions2 ret;
+            ret.a.counter = UniversalFunctions.Rand(1, 8);
+            ret.a.denominator = UniversalFunctions.Rand(1, 9);
+            ret.b.counter = UniversalFunctions.Rand(1, 8);
+            ret.b.denominator = UniversalFunctions.Rand(1, 9);
+            ret._operator = "*";
+
+            ret.correctanswer.counter = ret.a.counter * ret.b.counter;
+            ret.correctanswer.denominator = ret.a.denominator * ret.b.denominator;
+            int tmpGCD = UniversalFunctions.GCD(ret.correctanswer.counter, ret.correctanswer.denominator);
+            ret.correctanswer.counter /= tmpGCD;
+            ret.correctanswer.denominator /= tmpGCD;
 
             return ret;
         }
