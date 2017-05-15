@@ -12,7 +12,7 @@ namespace Maths.Resources.BaseActivities
     {
         OrdinaryFractionsFunction.OridinaryFractions2 expression = new OrdinaryFractionsFunction.OridinaryFractions2();
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
-        bool main = true; //czy jest w g≥Ûwnej peltli aplikacji
+        bool main = true; //czy jest w g≥Ûwnej petli aplikacji
 
         internal OrdinaryFractionsFunction.DelCompare Delcom;
         internal OrdinaryFractionsFunction.DelGenerate Delgen;
@@ -54,15 +54,28 @@ namespace Maths.Resources.BaseActivities
 
             //Main activity
             Action();
-            if(main)
+            mButton.Click += delegate
             {
-                mButton.Click += delegate
+                if (main)
                 {
-                    if (ifmix) Inizalize(); //Na potrzeby activity mix
-                    if (flag) Action();
-                    else ShowCorrectAnswer();
-                };
-            }
+                    if (ifmix) Inizalize(); // na potrzeby mix
+                    if (flag)
+                    {
+                        Action();
+                        main = false;
+                    }
+                    else
+                    {
+                        ShowCorrectAnswer();
+                        flag = true;
+                    }
+                }
+                else
+                {
+                    Verify();
+                    main = true;
+                }
+            };
         }
 
         public virtual void Inizalize()
@@ -73,12 +86,7 @@ namespace Maths.Resources.BaseActivities
         private void Action()
         {
             TurnOnVisibility();
-            //bool checkcounter = false;
-            //bool checkdenominator = false;
             main = false;
-
-           // mButton.Enabled = false;
-           // mButton.SetBackgroundColor(Android.Graphics.Color.ParseColor("#778899")); //gray
             mEditTextCounter3.Text = "";
             mEditTextDenominator3.Text = "";
             expression = Delgen();
@@ -89,46 +97,6 @@ namespace Maths.Resources.BaseActivities
             mTextViewCounter2.Text = Convert.ToString(expression.b.counter);
             mTextViewDenominator2.Text = Convert.ToString(expression.b.denominator);
             mTextViewChar.Text = expression._operator;
-
-            //Both textfield are full
-            //mEditTextCounter3.KeyPress += (object sender, View.KeyEventArgs i) =>
-            //{
-            //    i.Handled = false;
-            //    if (i.Event.Action == KeyEventActions.Down && i.KeyCode == Keycode.Enter)
-            //    {
-            //       // checkcounter = true;
-            //        i.Handled = true;
-            //    }
-
-            //};
-            //mEditTextDenominator3.KeyPress += (object sender, View.KeyEventArgs i) =>
-            //{
-            //    i.Handled = false;
-            //    if (i.Event.Action == KeyEventActions.Down && i.KeyCode == Keycode.Enter)
-            //    {
-            //       // checkdenominator = true;
-            //        i.Handled = true;
-            //    }
-            //};
-
-            ////enabled button - verification
-            //if (checkcounter && checkdenominator
-            //    //!mEditTextCounter3.Text.Equals("") &&
-            //    //!mEditTextDenominator3.Text.Equals("")
-            //    ) mButton.Enabled = true;
-
-            //mButton.Enabled = true;
-
-            //activate verification
-            mButton.Click += delegate
-            {
-                if (!mEditTextCounter3.Text.Equals("") &&
-                !mEditTextDenominator3.Text.Equals(""))
-                {
-                    Verify();
-                    main = true;
-                }
-            };
         }
 
         private void Verify()
@@ -161,7 +129,8 @@ namespace Maths.Resources.BaseActivities
         {
             TurnOffVisibility();
             mTextViewChar.Text = "Poprawna odpowiedü:";
-            // mEditTextCounter3.Text = Convert.ToString(expression.)
+            mEditTextCounter3.Text = Convert.ToString(expression.correctanswer.counter);
+            mEditTextDenominator3.Text = Convert.ToString(expression.correctanswer.denominator);
         }
 
         private void TurnOffVisibility()

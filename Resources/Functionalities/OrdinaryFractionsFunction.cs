@@ -31,7 +31,7 @@ namespace Functionalities
         {
             public SimpleOrdinaryFractions a;
             public SimpleOrdinaryFractions b;
-           // public SimpleOrdinaryFractions correctanswer;
+            public SimpleOrdinaryFractions correctanswer;
             public string _operator;
         }
 
@@ -46,18 +46,18 @@ namespace Functionalities
         /// <returns></returns>
         public static bool VerifyAddition(string valuecounter, string valuedenominator, OridinaryFractions2 exp)
         {
-            SimpleOrdinaryFractions result;
+           // SimpleOrdinaryFractions result;
 
-            result.denominator = UniversalFunctions.LCM(exp.a.denominator, exp.b.denominator);
-            int tmpCounterA = exp.a.counter * (result.denominator / exp.a.denominator);
-            int tmpCounterB = exp.b.counter * (result.denominator / exp.b.denominator);
+            //result.denominator = UniversalFunctions.LCM(exp.a.denominator, exp.b.denominator);
+            //int tmpCounterA = exp.a.counter * (result.denominator / exp.a.denominator);
+            //int tmpCounterB = exp.b.counter * (result.denominator / exp.b.denominator);
 
-            result.counter = tmpCounterA + tmpCounterB;
-            result.counter /= UniversalFunctions.GCD(result.counter, result.denominator);
-            result.denominator /= UniversalFunctions.GCD(result.counter, result.denominator);
+            //result.counter = tmpCounterA + tmpCounterB;
+            //result.counter /= UniversalFunctions.GCD(result.counter, result.denominator);
+            //result.denominator /= UniversalFunctions.GCD(result.counter, result.denominator);
 
-            return (valuecounter.Equals(Convert.ToString(result.counter)) &&
-                valuedenominator.Equals(Convert.ToString(result.denominator)));
+            return (valuecounter.Equals(Convert.ToString(exp.correctanswer.counter)) &&
+                valuedenominator.Equals(Convert.ToString(exp.correctanswer.denominator)));
         }
 
 
@@ -76,6 +76,14 @@ namespace Functionalities
             ret.b.counter = UniversalFunctions.Rand(1, 8);
             ret.b.denominator = UniversalFunctions.Rand(1, 9);
             ret._operator = "+";
+
+            ret.correctanswer.denominator = UniversalFunctions.LCM(ret.a.denominator, ret.b.denominator);
+            int tmpCounterA = ret.a.counter * (ret.correctanswer.denominator / ret.a.denominator);
+            int tmpCounterB = ret.b.counter * (ret.correctanswer.denominator / ret.b.denominator);
+
+            ret.correctanswer.counter = tmpCounterA + tmpCounterB;
+            ret.correctanswer.counter /= UniversalFunctions.GCD(ret.correctanswer.counter, ret.correctanswer.denominator);
+            ret.correctanswer.denominator /= UniversalFunctions.GCD(ret.correctanswer.counter, ret.correctanswer.denominator);
 
             return ret;
         }
