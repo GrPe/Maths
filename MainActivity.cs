@@ -6,7 +6,7 @@ using Maths.Resources.Source;
 
 namespace Maths
 {
-    [Activity(Label = "Maths", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Maths", MainLauncher = true, Icon = "@drawable/icon", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

@@ -5,7 +5,7 @@ using Maths.Resources.BaseActivities;
 
 namespace Maths.Resources.ActivitiesInteger
 {
-    [Activity(Label = "Subtraction2")]
+    [Activity(Label = "Subtraction2", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class Subtraction2 : IntegerActivity
     {
         protected override void Initialize()

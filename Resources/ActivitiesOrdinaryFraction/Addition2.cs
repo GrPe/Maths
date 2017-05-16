@@ -1,20 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Maths.Resources.BaseActivities;
 using Functionalities;
 
 namespace Maths.Resources.ActivitiesOrdinaryFraction
 {
-    [Activity(Label = "Addition2")]
+    [Activity(Label = "Addition2", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class Addition2 : OrdinaryFractionsActivity
     {
         public override void Initialize()

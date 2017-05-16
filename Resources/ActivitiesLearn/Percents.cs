@@ -5,7 +5,7 @@ using Maths.Resources.ActivitiesPercents;
 
 namespace Maths.Resources.ActivitiesLearn
 {
-    [Activity(Label = "Percents")]
+    [Activity(Label = "Percents", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class Percents : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

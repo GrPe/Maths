@@ -5,7 +5,7 @@ using Android.Widget;
 
 namespace Maths.Resources.ActivitiesLearn
 {
-    [Activity(Label = "Integer")]
+    [Activity(Label = "Integer", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class Integer : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

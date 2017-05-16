@@ -5,7 +5,7 @@ using Functionalities;
 
 namespace Maths.Resources.ActivitiesOrdinaryFraction
 {
-    [Activity(Label = "DIvision2")]
+    [Activity(Label = "DIvision2", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class Division2 : OrdinaryFractionsActivity
     {
         public override void Initialize()

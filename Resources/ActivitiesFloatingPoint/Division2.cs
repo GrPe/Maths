@@ -5,7 +5,7 @@ using Functionalities;
 
 namespace Maths.Resources.ActivitiesFloatingPoint
 {
-    [Activity(Label = "Division2")]
+    [Activity(Label = "Division2", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class Division2 : FloatingPointActivity
     {
         protected override void Initialize()

@@ -5,7 +5,7 @@ using Functionalities;
 
 namespace Maths.Resources.ActivitiesFloatingPoint
 {
-    [Activity(Label = "Addition2")]
+    [Activity(Label = "Addition2", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class Addition2 : FloatingPointActivity
     {
         protected override void Initialize()

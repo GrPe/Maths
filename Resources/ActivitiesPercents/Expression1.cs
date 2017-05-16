@@ -5,7 +5,7 @@ using Functionalities;
 
 namespace Maths.Resources.ActivitiesPercents
 {
-    [Activity(Label = "Expression1")]
+    [Activity(Label = "Expression1", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class Expression1 : PercentsActivity
     {
         protected override void Initialize()

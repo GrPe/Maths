@@ -5,7 +5,7 @@ using Maths.Resources.ActivitiesFloatingPoint;
 
 namespace Maths.Resources.ActivitiesLearn
 {
-    [Activity(Label = "FloatingPoint")]
+    [Activity(Label = "FloatingPoint", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class FloatingPoint : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

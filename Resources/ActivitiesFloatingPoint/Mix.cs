@@ -5,7 +5,7 @@ using Functionalities;
 
 namespace Maths.Resources.ActivitiesFloatingPoint
 {
-    [Activity(Label = "Mix")]
+    [Activity(Label = "Mix", Theme = "@android:style/Theme.DeviceDefault.DialogWhenLarge.NoActionBar")]
     public class Mix : FloatingPointActivity
     {
         protected override void Initialize()
