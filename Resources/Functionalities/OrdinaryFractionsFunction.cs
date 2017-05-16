@@ -79,7 +79,7 @@ namespace Functionalities
             return ret;
         }
 
-        public static OrdinaryFractions2 GenerateSubtraction2()
+        public static OrdinaryFractions2 GenerateSubtraction()
         {
             OrdinaryFractions2 ret;
             do
@@ -115,6 +115,24 @@ namespace Functionalities
 
             ret.correctanswer.counter = ret.a.counter * ret.b.counter;
             ret.correctanswer.denominator = ret.a.denominator * ret.b.denominator;
+            int tmpGCD = UniversalFunctions.GCD(ret.correctanswer.counter, ret.correctanswer.denominator);
+            ret.correctanswer.counter /= tmpGCD;
+            ret.correctanswer.denominator /= tmpGCD;
+
+            return ret;
+        }
+
+        public static OrdinaryFractions2 GenerateDivision()
+        {
+            OrdinaryFractions2 ret;
+            ret.a.counter = UniversalFunctions.Rand(1, 8);
+            ret.a.denominator = UniversalFunctions.Rand(1, 9);
+            ret.b.counter = UniversalFunctions.Rand(1, 8);
+            ret.b.denominator = UniversalFunctions.Rand(1, 9);
+            ret._operator = "\u00f7";
+
+            ret.correctanswer.counter = ret.a.counter * ret.b.denominator;
+            ret.correctanswer.denominator = ret.a.denominator * ret.b.counter;
             int tmpGCD = UniversalFunctions.GCD(ret.correctanswer.counter, ret.correctanswer.denominator);
             ret.correctanswer.counter /= tmpGCD;
             ret.correctanswer.denominator /= tmpGCD;

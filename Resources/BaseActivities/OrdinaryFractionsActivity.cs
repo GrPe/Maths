@@ -14,8 +14,8 @@ namespace Maths.Resources.BaseActivities
         bool flag = true; //sprawdza czy uzytkownik udzielil prawidlowej odpowiedzi
         bool main = true; //czy jest w g³ównej petli aplikacji
 
-        internal OrdinaryFractionsFunction.DelCompare Delcom;
-        internal OrdinaryFractionsFunction.DelGenerate Delgen;
+        internal OrdinaryFractionsFunction.DelCompare DelCom;
+        internal OrdinaryFractionsFunction.DelGenerate DelGen;
         internal bool ifmix = false; //czy aktywna jest activity mix
 
         TextView mTextViewCounter1;
@@ -50,7 +50,7 @@ namespace Maths.Resources.BaseActivities
             mEditTextCounter3.InputType = Android.Text.InputTypes.ClassNumber;
             mEditTextDenominator3.InputType = Android.Text.InputTypes.ClassNumber;
 
-            Inizalize();
+            Initialize();
 
             //Main activity
             Action();
@@ -58,7 +58,7 @@ namespace Maths.Resources.BaseActivities
             {
                 if (main)
                 {
-                    if (ifmix) Inizalize(); // na potrzeby mix
+                    if (ifmix) Initialize(); // na potrzeby mix
                     if (flag)
                     {
                         Action();
@@ -78,7 +78,7 @@ namespace Maths.Resources.BaseActivities
             };
         }
 
-        public virtual void Inizalize()
+        public virtual void Initialize()
         {
             //IsEmpty
         }
@@ -89,7 +89,7 @@ namespace Maths.Resources.BaseActivities
             main = false;
             mEditTextCounter3.Text = "";
             mEditTextDenominator3.Text = "";
-            expression = Delgen();
+            expression = DelGen();
 
             //Set an expression
             mTextViewCounter1.Text = Convert.ToString(expression.a.counter);
@@ -101,12 +101,12 @@ namespace Maths.Resources.BaseActivities
 
         private void Verify()
         {
-            if (Delcom(mEditTextCounter3.Text, mEditTextDenominator3.Text, expression))
+            if (DelCom(mEditTextCounter3.Text, mEditTextDenominator3.Text, expression))
             {
                 flag = true;
                 CorrectAnswer();
             }
-            if (!Delcom(mEditTextCounter3.Text, mEditTextDenominator3.Text, expression))
+            if (!DelCom(mEditTextCounter3.Text, mEditTextDenominator3.Text, expression))
             {
                 flag = false;
                 WrongAnswer();

@@ -8,10 +8,10 @@ namespace Maths.Resources.ActivitiesOrdinaryFraction
     [Activity(Label = "Subtraction2")]
     public class Subtraction2 : OrdinaryFractionsActivity
     {
-        public override void Inizalize()
+        public override void Initialize()
         {
-            Delcom = OrdinaryFractionsFunction.VerifyAswers;
-            Delgen = OrdinaryFractionsFunction.GenerateSubtraction2;
+            DelCom = OrdinaryFractionsFunction.VerifyAswers;
+            DelGen = OrdinaryFractionsFunction.GenerateSubtraction;
         }
 
         protected override void OnCreate(Bundle savedInstanceState)

@@ -73,6 +73,8 @@
     <Compile Include="Resources\ActivitiesLearn\OrdinaryFractions.cs" />
     <Compile Include="Resources\ActivitiesLearn\Percents.cs" />
     <Compile Include="Resources\ActivitiesOrdinaryFraction\Addition2.cs" />
+    <Compile Include="Resources\ActivitiesOrdinaryFraction\Division2.cs" />
+    <Compile Include="Resources\ActivitiesOrdinaryFraction\Mix.cs" />
     <Compile Include="Resources\ActivitiesOrdinaryFraction\Multiplication2.cs" />
     <Compile Include="Resources\ActivitiesOrdinaryFraction\Subtraction2.cs" />
     <Compile Include="Resources\ActivitiesPercents\Expression1.cs" />
